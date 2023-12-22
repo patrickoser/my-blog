@@ -7,8 +7,13 @@ import About from './components/About';
 import EditPage from './components/EditPage';
 import Footer from './components/Footer';
 import Missing from './components/Missing';
+import { createBrowserRouter, Link, Route, RouterProvider, Routes } from 'react-router-dom';
 
-function App() {
+const router = createBrowserRouter([
+  { path: "*", Component: Root },
+]);
+
+function Root() {
   return (
     <div className="App">
       <Header />
@@ -21,6 +26,10 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;

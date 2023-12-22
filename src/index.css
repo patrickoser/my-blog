@@ -44,3 +44,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.Home, .NewPost, .PostPage, .About, .Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
