@@ -18,11 +18,13 @@ function Root() {
     <div className="App">
       <Header />
       <Nav />
-      <Home />
-      <PostPage />
-      <EditPage />
-      <About />
-      <Missing />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/postpage' element={<PostPage />} />
+        <Route path='editpage' element={<EditPage />} />
+        <Route path='/about' element={<About />} />
+        <Route path='*' element={<Missing />} />
+      </Routes>
       <Footer />
     </div>
   );
