@@ -11,6 +11,7 @@ import Missing from './components/Missing';
 import { createBrowserRouter, Link, Route, RouterProvider, Routes } from 'react-router-dom';
 
 const router = createBrowserRouter([
+  { path: "/", Component: Home },
   { path: "*", Component: Root },
 ]);
 
