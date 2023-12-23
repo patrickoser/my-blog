@@ -45,7 +45,7 @@ body {
   align-items: center;
 }
 
-.Home, .NewPost, .PostPage, .About, .Missing {
+.Home, .NewPost, .PostPage, .About, .Missing, .EditPage {
   width: 100%;
   flex-grow: 1;
   padding: 1rem;
