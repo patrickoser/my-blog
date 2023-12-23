@@ -21,7 +21,6 @@ function Root() {
       <Header />
       <Nav />
       <Routes>
-        <Route path='/' element={<Home />} />
         <Route path='/postpage' element={<PostPage />} />
         <Route path='/newpost' element={<NewPost />} />
         <Route path='editpage' element={<EditPage />} />
