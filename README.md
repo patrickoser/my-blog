@@ -1,3 +1,7 @@
+My Blog
+
+Practice React, and all its nuances, and get a place to record my progress so far.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
