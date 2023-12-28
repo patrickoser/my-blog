@@ -12,8 +12,24 @@ import { createBrowserRouter, Link, Route, RouterProvider, Routes } from 'react-
 import Layout from './components/Layout';
 
 const router = createBrowserRouter([
-  { path: "/", Component: Home },
-  { path: "*", Component: Root },
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/postpage",
+        element: <PostPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      }
+    ],
+  },
+  { path: "*", element: Root },
 ]);
 
 function Root() {
