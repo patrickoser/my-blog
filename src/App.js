@@ -9,6 +9,7 @@ import NewPost from './components/NewPost';
 import Footer from './components/Footer';
 import Missing from './components/Missing';
 import { createBrowserRouter, Link, Route, RouterProvider, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
 
 const router = createBrowserRouter([
   { path: "/", Component: Home },
@@ -21,11 +22,13 @@ function Root() {
       <Header />
       <Nav />
       <Routes>
-        <Route path='/postpage' element={<PostPage />} />
-        <Route path='/newpost' element={<NewPost />} />
-        <Route path='editpage' element={<EditPage />} />
-        <Route path='/about' element={<About />} />
-        <Route path='*' element={<Missing />} />
+        <Route element={<Layout />}>
+          <Route path='/postpage' element={<PostPage />} />
+          <Route path='/newpost' element={<NewPost />} />
+          <Route path='editpage' element={<EditPage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='*' element={<Missing />} />
+        </Route>
       </Routes>
       <Footer />
     </div>
