@@ -1,9 +1,22 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
+    
+
     return (
         <div className="Nav">
             <nav>
+                <form onSubmit={(e) => e.preventDefault()}>
+                    <input 
+                        className="searchInput"
+                        type="text" 
+                        name="search" 
+                        id="search"
+                        onChange={handleSearchChange} 
+                    />
+                    <button className="searchBtn">Search</button>
+                </form>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
