@@ -26,7 +26,19 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-      }
+      },
+      {
+        path: "/editpage",
+        element: <EditPage />,
+      },
+      {
+        path: "/newpost",
+        element: <NewPost />,
+      },
+      {
+        path: "*",
+        element: <Missing />,
+      },
     ],
   },
   { path: "*", element: Root },
@@ -38,13 +50,7 @@ function Root() {
       <Header />
       <Nav />
       <Routes>
-        <Route element={<Layout />}>
-          <Route path='/postpage' element={<PostPage />} />
-          <Route path='/newpost' element={<NewPost />} />
-          <Route path='editpage' element={<EditPage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='*' element={<Missing />} />
-        </Route>
+        <Route element={<Layout />} />
       </Routes>
       <Footer />
     </div>
