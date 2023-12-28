@@ -1,12 +1,9 @@
 import './App.css';
 import PostPage from './components/PostPage';
 import Home from './components/Home';
-import Nav from './components/Nav';
-import Header from './components/Header';
 import About from './components/About';
 import EditPage from './components/EditPage';
 import NewPost from './components/NewPost';
-import Footer from './components/Footer';
 import Missing from './components/Missing';
 import { createBrowserRouter, Link, Route, RouterProvider, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
