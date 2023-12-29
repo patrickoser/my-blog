@@ -2,6 +2,11 @@ My Blog
 
 Practice React, and all its nuances, and get a place to record my progress so far.
 
+Next:
+    1. Implement CRUD operations.
+    2. Set up Axios to practice working with a database.
+    3. Create forms to post blogs.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
