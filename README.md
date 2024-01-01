@@ -2,6 +2,8 @@ My Blog
 
 Practice React, and all its nuances, and get a place to record my progress so far.
 
+Let's Build.
+
 Next:
     1. Implement CRUD operations.
     2. Set up Axios to practice working with a database.
