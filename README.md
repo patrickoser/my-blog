@@ -5,8 +5,8 @@ Practice React, and all its nuances, and get a place to record my progress so fa
 Let's Build.
 
 Next:
-    1. Implement CRUD operations.
-    2. Set up Axios to practice working with a database.
+    1. Set up Axios to practice working with a database.
+    2. Implement CRUD operations. 
     3. Create forms to post blogs.
 
 # Getting Started with Create React App
