@@ -46,10 +46,18 @@ const router = createBrowserRouter([
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
+
+  // useState provides you with the current value of that piece of state(post/postTitle/postBody)
+  // as well a function to update/set that value to something new.
   const [post, setPost] = useState([]);
   const [postTitle, setPostTitle] = useState('');
   const [postBody, setPostBody] = useState('');
+
+  // history will be used to navigate to a contextually appropriate page after certain actions.
+  // Such as the home screen after submitting a post.
   const history = useNavigate();
+
+  
 
   return (
     <div className="App">
