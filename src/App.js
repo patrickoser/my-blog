@@ -5,7 +5,7 @@ import About from './components/About';
 import EditPage from './components/EditPage';
 import NewPost from './components/NewPost';
 import Missing from './components/Missing';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { useState, useEffect } from 'react';
 
@@ -48,6 +48,7 @@ const router = createBrowserRouter([
 function App() {
   const [post, setPost] = useState([]);
   const [postTitle, setPostTitle] = useState('');
+  const [postBody, setPostBody] = useState('');
 
   return (
     <div className="App">
