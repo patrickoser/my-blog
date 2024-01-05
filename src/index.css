@@ -93,10 +93,10 @@ form {
   padding: 1rem 0 0 0.75rem;
 }
 
-.searchInput input[type="text"] {
+.searchInput {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
-  min-height: 48px;
+  min-height: 38px;
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.25rem;
