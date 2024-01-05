@@ -8,6 +8,7 @@ import Missing from './components/Missing';
 import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import { useState, useEffect } from 'react';
+import axios from './api/axios';
 
 // createBrowserRouter uses Layout as the root element that is rendered first.
 // All of the children nested within Layout are then designated their own path

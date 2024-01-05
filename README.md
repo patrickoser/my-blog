@@ -7,6 +7,9 @@ Let's Build!
 Keep commenting on everything you do so that you can know exactly what something does when you 
 come back to it later.
 
+Errors:
+    1. Ran into error when using useNavigate inside useEffect. I think there is an interaction with createBrowserRouter that is leading to this error.
+
 Next:
     1. Set up Axios to practice working with a database.
     2. Implement CRUD operations. 
