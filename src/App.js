@@ -57,7 +57,17 @@ function App() {
   // Such as the home screen after submitting a post.
   const history = useNavigate();
 
-  
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get('/posts');
+        setPost(response.data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchPosts();
+  }, [])
 
   return (
     <div className="App">
