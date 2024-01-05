@@ -49,6 +49,7 @@ function App() {
   const [post, setPost] = useState([]);
   const [postTitle, setPostTitle] = useState('');
   const [postBody, setPostBody] = useState('');
+  const history = useNavigate();
 
   return (
     <div className="App">
