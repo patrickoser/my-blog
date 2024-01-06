@@ -56,7 +56,7 @@ function App() {
 
   // history will be used to navigate to a contextually appropriate page after certain actions.
   // Such as the home screen after submitting a post.
-  const history = useNavigate();
+  // const history = useNavigate();
 
   useEffect(() => {
     const fetchPosts = async () => {
