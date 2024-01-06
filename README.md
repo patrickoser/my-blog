@@ -8,12 +8,13 @@ Keep commenting on everything you do so that you can know exactly what something
 come back to it later.
 
 Errors:
-    1. Ran into error when using useNavigate inside useEffect. I think there is an interaction with createBrowserRouter that is leading to this error.
+    1.
 
 Next:
     1. Set up Axios to practice working with a database.
-    2. Implement CRUD operations. 
-    3. Create forms to post blogs.
+    2. Figure out the proper set up for 'createBrowserRouter'
+    3. Implement CRUD operations. 
+    4. Create forms to post blogs.
 
 # Getting Started with Create React App
 
