@@ -2,7 +2,6 @@ import axios from "../api/axios"
 
 const Home = () => {
 
-
     return (
         <div className="Home">
             <h1>Home</h1>
