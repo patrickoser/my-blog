@@ -71,6 +71,7 @@ function App() {
     fetchPosts();
   }, [])
 
+  // Returns the jsx elements.
   return (
     <div className="App">
       <RouterProvider router={router} />;
