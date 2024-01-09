@@ -58,6 +58,7 @@ function App() {
   // Such as the home screen after submitting a post.
   // const history = useNavigate();
 
+  // This will GET posts from db.json and populate the home page with them.
   useEffect(() => {
     const fetchPosts = async () => {
       try {
