@@ -8,7 +8,7 @@ Keep commenting on everything you do so that you can know exactly what something
 come back to it later.
 
 Errors:
-    1.
+    1. Lack of concentration.
 
 Next:
     1. Set up Axios to practice working with a database.
