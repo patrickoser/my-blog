@@ -1,12 +1,4 @@
 import './App.css';
-import PostPage from './components/PostPage';
-import Home from './components/Home';
-import About from './components/About';
-import EditPage from './components/EditPage';
-import NewPost from './components/NewPost';
-import Missing from './components/Missing';
-import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
-import Layout from './components/Layout';
 import { useState, useEffect } from 'react';
 import axios from './api/axios';
 
@@ -40,7 +32,6 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <RouterProvider router={router} />;
     </div>
   );
 }
