@@ -8,8 +8,8 @@ Keep commenting on everything you do so that you can know exactly what something
 come back to it later.
 
 Next:
-    1. Set up Axios to practice working with a database.
-    2. Figure out the proper set up for 'createBrowserRouter'
+    1. Figure out the proper set up for 'createBrowserRouter'
+    2. Set up Axios to practice working with a database.
     3. Implement CRUD operations. 
     4. Create forms to post blogs.
 
