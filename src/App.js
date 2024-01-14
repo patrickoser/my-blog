@@ -10,40 +10,6 @@ import Layout from './components/Layout';
 import { useState, useEffect } from 'react';
 import axios from './api/axios';
 
-// createBrowserRouter uses Layout as the root element that is rendered first.
-// All of the children nested within Layout are then designated their own path
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/postpage",
-        element: <PostPage />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/editpage",
-        element: <EditPage />,
-      },
-      {
-        path: "/newpost",
-        element: <NewPost />,
-      },
-      {
-        path: "*",
-        element: <Missing />,
-      },
-    ],
-  },
-  { path: "*", element: App },
-]);
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
