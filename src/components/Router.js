@@ -44,7 +44,7 @@ const Router = () => {
         { path: "*", element: App },
     ]);
 
-    return 
+    return <RouterProvider router={router} />
 }
 
 export default Router
