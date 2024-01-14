@@ -7,9 +7,6 @@ Let's Build!
 Keep commenting on everything you do so that you can know exactly what something does when you 
 come back to it later.
 
-Errors:
-    1. Lack of concentration!
-
 Next:
     1. Set up Axios to practice working with a database.
     2. Figure out the proper set up for 'createBrowserRouter'
