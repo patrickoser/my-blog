@@ -36,3 +36,5 @@ const Router = () => {
         { path: "*", element: App },
     ]);
 }
+
+export default Router
