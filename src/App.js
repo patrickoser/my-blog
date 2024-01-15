@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import axios from './api/axios';
+import axios from './api/postsAxios';
 import Router from './components/Router';
 
 
