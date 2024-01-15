@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from './api/axios';
+import Router from './components/Router';
 
 
 // App() returns router which contains all of the layout/routes for the site
@@ -32,6 +33,7 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
+      <Router />
     </div>
   );
 }
