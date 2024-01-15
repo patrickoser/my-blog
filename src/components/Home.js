@@ -1,4 +1,3 @@
-import axios from "../api/axios"
 
 const Home = () => {
 
