@@ -8,6 +8,7 @@ Keep commenting on everything you do so that you can know exactly what something
 come back to it later.
 
 Next:
+    0. Figure out how { posts } is being passed to Post/Home/Feed, I believe length is unable to be read because { posts } can't be found.
     1. Figure out Loaders, useEffect/useState when using createBrowserRouter in react router v6.4
     2. Set up Axios to practice working with a database.
     3. Implement CRUD operations. 
