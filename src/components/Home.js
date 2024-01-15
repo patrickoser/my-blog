@@ -1,9 +1,15 @@
+import Feed from "./Feed"
 
-const Home = () => {
-
+const Home = ({ posts }) => {
     return (
         <div className="Home">
-            <h1>Home</h1>
+            {posts.length ? (
+                <Feed posts={posts} />
+            ) : (
+                <p>
+                    No posts to display.
+                </p>
+            )}
         </div>
     )
 }
