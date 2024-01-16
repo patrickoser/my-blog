@@ -1,8 +1,52 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import axios from './api/postsAxios';
-import Router from './components/Router';
+import api from './api/postsAxios';
+// import Router from './components/Router';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Home";
+import PostPage from "./components/PostPage";
+import About from "./components/About";
+import EditPage from "./components/EditPage";
+import NewPost from "./components/NewPost";
+import Missing from "./components/Missing";
+import Layout from "./components/Layout";
 
+const Router = () => {
+  const router = createBrowserRouter([
+      {
+          element: <Layout />,
+          children: [
+              {
+                  path: "/",
+                  element: <Home />,
+              },
+              {
+                  path: "/postpage",
+                  element: <PostPage />,
+              },
+              {
+                  path: "/about",
+                  element: <About />,
+              },
+              {
+                  path: "/editpage",
+                  element: <EditPage />,
+              },
+              {
+                  path: "/newpost",
+                  element: <NewPost />,
+              },
+              {
+                  path: "*",
+                  element: <Missing />,
+              },
+          ],
+      },
+      { path: "*", element: App },
+  ]);
+
+  return <RouterProvider router={router} />
+}
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
@@ -21,7 +65,7 @@ function App() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('/posts');
+        const response = await api.get('/posts');
         console.log(setPost(response.data))
         setPost(response.data);
       } catch (err) {
