@@ -9,7 +9,8 @@ import Layout from "./Layout";
 import App from "../App";
 
 // createBrowserRouter uses Layout as the root element that is rendered first.
-// All of the children nested within Layout are then designated their own path
+// All of the children nested within Layout are then designated their own path.
+// Router is then exported to be called/returned from within 'App'.
 const Router = () => {
     const router = createBrowserRouter([
         {
