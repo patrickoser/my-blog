@@ -7,6 +7,11 @@ Let's Build!
 Keep commenting on everything you do so that you can know exactly what something does when you 
 come back to it later.
 
+Attention:
+    Go back to the tut and rewatch parts where it is described how/when to pass along props to components. Refresh what a prop/component is and how to use them then implement what you learned. No pressure just keep moving forward.
+
+    Think about using 'createRoutesFromElements' so you can keep the original syntax. Though if you would still be using 'createBrowserRouter' and have to figure out how to pass along props to components.
+
 Next:
     0. Figure out how { posts } is being passed to Post/Home/Feed, I believe length is unable to be read because { posts } can't be found.
     1. Figure out Loaders, useEffect/useState when using createBrowserRouter in react router v6.4
