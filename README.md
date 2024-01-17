@@ -1,4 +1,4 @@
-My Blog
+My Blog.
 
 Practice React, and all its nuances, and get a place to record my progress so far.
 
