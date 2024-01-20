@@ -15,6 +15,10 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={Layout}>
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
+    <Route path='postpage' element={<PostPage />} />
+    <Route path='editpage' element={<EditPage />} />
+    <Route path='newpost' element={<NewPost />} />
+    <Route path='missing' element={<Missing />} />
   </Route>
 ))
 
