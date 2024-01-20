@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import api from './api/postsAxios';
 // import Router from './components/Router';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import PostPage from "./components/PostPage";
 import About from "./components/About";
@@ -11,42 +11,12 @@ import NewPost from "./components/NewPost";
 import Missing from "./components/Missing";
 import Layout from "./components/Layout";
 
-const Router = () => {
-  const router = createBrowserRouter([
-      {
-          element: <Layout />,
-          children: [
-              {
-                  path: "/",
-                  element: <Home />,
-              },
-              {
-                  path: "/postpage",
-                  element: <PostPage />,
-              },
-              {
-                  path: "/about",
-                  element: <About />,
-              },
-              {
-                  path: "/editpage",
-                  element: <EditPage />,
-              },
-              {
-                  path: "/newpost",
-                  element: <NewPost />,
-              },
-              {
-                  path: "*",
-                  element: <Missing />,
-              },
-          ],
-      },
-      { path: "*", element: App },
-  ]);
-
-  return <RouterProvider router={router} />
-}
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={Layout}>
+    <Route index element={<Home />} />
+    <Route path='about' element={<About />} />
+  </Route>
+))
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
