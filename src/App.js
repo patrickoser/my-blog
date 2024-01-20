@@ -52,7 +52,7 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <Router />
+      <RouterProvider router={router} />
     </div>
   );
 }
