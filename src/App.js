@@ -11,6 +11,8 @@ import NewPost from "./components/NewPost";
 import Missing from "./components/Missing";
 import Layout from "./components/Layout";
 
+// createBrowserRouter creates a custom router object and uses createRoutesFromELements to make
+// it possible to uses the same syntax as you would with browserRouter.
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={Layout}>
     <Route index element={<Home />} />
