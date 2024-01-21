@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import api from './api/postsAxios';
+
 // import Router from './components/Router';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
