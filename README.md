@@ -8,16 +8,17 @@ Keep commenting on everything you do so that you can know exactly what something
 come back to it later.
 
 Attention:
-    Go back to the tut and rewatch parts where it is described how/when to pass along props to components. Refresh what a prop/component is and how to use them then implement what you learned. No pressure just keep moving forward.
 
     Think about using 'createRoutesFromElements' so you can keep the original syntax. You can always try using 'createBrowserRouter' on a later project once you find a good resource for how to format your code with it.
 
-Next:
-    0. Figure out how { posts } is being passed to Post/Home/Feed, I believe length is unable to be read because { posts } can't be found.
-    1. Figure out Loaders, useEffect/useState when using createBrowserRouter in react router v6.4
-    2. Set up Axios to practice working with a database.
-    3. Implement CRUD operations. 
-    4. Create forms to post blogs.
+Steps:
+    1. Go back to the tut and rewatch parts where it is described how/when to pass along props to components. Refresh what a prop/component is and how to use them then implement what you learned. No pressure just keep moving forward.
+    2. Use 'createRoutesFromElements' with 'createBrowserRouter'. There seems to be more resources on how to use those so make use of them.
+    3. Figure out how { posts } is being passed to Post/Home/Feed, I believe length is unable to be read because { posts } can't be found.
+    4. Figure out Loaders, useEffect/useState when using createBrowserRouter in react router v6.4
+    5. Set up Axios to practice working with a database.
+    6. Implement CRUD operations. 
+    7. Create forms to post blogs.
 
 # Getting Started with Create React App
 
