@@ -30,7 +30,7 @@ function App() {
 
   // useState provides you with the current value of that piece of state(post/postTitle/postBody)
   // as well a function to update/set that value to something new.
-  const [post, setPost] = useState([]);
+  const [posts, setPosts] = useState([]);
   const [postTitle, setPostTitle] = useState('');
   const [postBody, setPostBody] = useState('');
 
