@@ -13,15 +13,11 @@ Attention:
 
 Steps:
 
-    1. Go back to the tut and rewatch parts where it is described how/when to pass along props
-    to components. Refresh what a prop/component is and how to use them then implement what you
-    learned. No pressure just keep moving forward.
-
-    2. Use 'createRoutesFromElements' with 'createBrowserRouter'. There seems to be more
-    resources on how to use those so make use of them.
-
-    3. Figure out how { posts } is being passed to Post/Home/Feed, I believe length is unable to
-    be read because { posts } can't be found.
+    3. Figure out how to pass props to components when using 'createBrowserRouter'/
+    'createRoutesFromElements'. When you are returning those components/elements with the App
+    component they are easy to pass along but when you use'CBR'/CRFE' the route variable that
+    hold all the routes/components is outside of the App component. I need to find a way to
+    pass them along even though the routes are outside of App.
 
     4. Figure out Loaders, useEffect/useState when using 'createBrowserRouter'
     'createRoutesFromElements' in react router v6.4.
