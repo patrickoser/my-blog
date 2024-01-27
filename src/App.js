@@ -44,7 +44,7 @@ function App() {
       try {
         const response = await api.get('/posts');
         console.log(setPost(response.data))
-        setPost(response.data);
+        setPosts(response.data);
       } catch (err) {
         console.log(err);
       }
