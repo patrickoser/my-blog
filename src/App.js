@@ -22,7 +22,7 @@ import Layout from "./components/Layout";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
-    
+    <Route index element={<Home />} />
   </Route>
 ))
 

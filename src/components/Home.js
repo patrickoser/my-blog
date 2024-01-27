@@ -24,6 +24,7 @@ const Home = ({ posts }) => {
     */
     return (
         <div className="Home">
+            <h1>Home</h1>
             {posts.length ? (
                 <Feed posts={posts} />
             ) : (
