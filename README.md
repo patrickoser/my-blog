@@ -12,12 +12,11 @@ Attention:
     Think about using 'createRoutesFromElements' so you can keep the original syntax. You can always try using 'createBrowserRouter' on a later project once you find a good resource for how to format your code with it.
 
 Steps:
+    1. 
 
-    3. Figure out how to pass props to components when using 'createBrowserRouter'/
-    'createRoutesFromElements'. When you are returning those components/elements with the App
-    component they are easy to pass along but when you use'CBR'/CRFE' the route variable that
-    hold all the routes/components is outside of the App component. I need to find a way to
-    pass them along even though the routes are outside of App.
+    3. Look into context api's/loaders for different ways to pass props to components. Prop drilling seems to still be
+    possible with 'createBrowserRouter' I just havent figured out how to pass the props now that the router is a singleton
+    and not nested with the 'App' component.
 
     4. Figure out Loaders, useEffect/useState when using 'createBrowserRouter'
     'createRoutesFromElements' in react router v6.4.
