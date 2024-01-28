@@ -16,7 +16,8 @@ Steps:
 
     3. Look into context api's/loaders for different ways to pass props to components. Prop drilling seems to still be
     possible with 'createBrowserRouter' I just havent figured out how to pass the props now that the router is a singleton
-    and not nested with the 'App' component.
+    and not nested with the 'App' component. I need to find an example of how prop drilling work with the router object
+    as a singleton.
 
     4. Figure out Loaders, useEffect/useState when using 'createBrowserRouter'
     'createRoutesFromElements' in react router v6.4.
