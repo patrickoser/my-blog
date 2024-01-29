@@ -6,7 +6,7 @@ import Feed from "./Feed"
 // all available posts to the page.
 // If the boolean comes back as false, or < 1, then 'No posts to display' will be displayed.
 const Home = ({ posts }) => {
-    
+
     /* 
     const [posts, setPosts] = useState([]);
 
@@ -31,6 +31,7 @@ const Home = ({ posts }) => {
             </p>
         )}
     */
+   
     return (
         <div className="Home">
             <h1>Home</h1>
