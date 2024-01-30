@@ -38,7 +38,9 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <DataProvider>
+        <RouterProvider router={router} />
+      </DataProvider>
     </div>
   );
 }
