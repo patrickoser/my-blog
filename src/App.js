@@ -61,7 +61,7 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <RouterProvider router={router} posts={posts} />
+      <RouterProvider router={router} />
     </div>
   );
 }
