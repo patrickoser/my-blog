@@ -12,12 +12,9 @@ Attention:
     Think about using 'createRoutesFromElements' so you can keep the original syntax. You can always try using 'createBrowserRouter' on a later project once you find a good resource for how to format your code with it.
 
 Steps:
-    1. 
-
-    3. Look into context api's/loaders for different ways to pass props to components. Prop drilling seems to still be
-    possible with 'createBrowserRouter' I just havent figured out how to pass the props now that the router is a singleton
-    and not nested with the 'App' component. I need to find an example of how prop drilling work with the router object
-    as a singleton.
+    1. I need to figure out how to use the context api with 'createBrowserRouter'
+    'createRoutesFromElements'. I could always go back to using 'BrowserRouter' but would really
+    like to make this work. 
 
     4. Figure out Loaders, useEffect/useState when using 'createBrowserRouter'
     'createRoutesFromElements' in react router v6.4.
