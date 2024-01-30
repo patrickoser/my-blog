@@ -1,4 +1,5 @@
 import { createContext } from "react";
+import { useState } from "react";
 
 const DataContext = createContext({})
 
@@ -30,7 +31,7 @@ export const DataProvider = ({ children }) => {
     
     return (
         <DataContext.Provider value={{
-
+            posts
         }}>
             {children}
         </DataContext.Provider>
