@@ -22,16 +22,14 @@ import { DataProvider } from './context/DataContext';
 */
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <DataProvider>
-    <Route path='/' element={<Layout />}>
-      <Route index element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='postpage' element={<PostPage />} />
-      <Route path='editpage' element={<EditPage />} />
-      <Route path='newpost' element={<NewPost />} />
-      <Route path='*' element={<Missing />} />
-    </Route>
-  </DataProvider>
+  <Route path='/' element={<Layout />}>
+    <Route index element={<Home />} />
+    <Route path='about' element={<About />} />
+    <Route path='postpage' element={<PostPage />} />
+    <Route path='editpage' element={<EditPage />} />
+    <Route path='newpost' element={<NewPost />} />
+    <Route path='*' element={<Missing />} />
+  </Route>
 ))
 
 // App() returns router which contains all of the layout/routes for the site

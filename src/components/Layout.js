@@ -1,6 +1,7 @@
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
+import { DataProvider } from '../context/DataContext';
 import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
@@ -10,8 +11,10 @@ const Layout = () => {
     return (
         <>
             <Header />
-            <Nav />
+            <DataProvider>
+                <Nav />
                 <Outlet />
+            </DataProvider>
             <Footer />
         </>
     )
