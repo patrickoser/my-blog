@@ -33,11 +33,35 @@ const router = createBrowserRouter(createRoutesFromElements(
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
+  const [posts, setPosts] = useState([
+    {
+      "posts": [
+          {
+              "id": 1,
+              "title": "1st post",
+              "datetime": "January 1, 2024 11:47:39 AM",
+              "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+              "id": 2,
+              "title": "Second post",
+              "datetime": "January 1, 2024 11:47:48 AM",
+              "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. two"
+          },
+          {
+              "id": 3,
+              "title": "posting up",
+              "datetime": "January 1, 2024 1:57:53 PM",
+              "body": "on the block"
+          }
+      ]
+  }
+  ])
 
   // Returns the jsx elements.
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <RouterProvider router={router} posts={posts} />
     </div>
   );
 }

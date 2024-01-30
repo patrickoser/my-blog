@@ -31,11 +31,11 @@ const Home = ({ posts }) => {
             </p>
         )}
     */
-   
+
     return (
         <div className="Home">
             <h1>Home</h1>
-
+            <Feed posts={posts} />
         </div>
     )
 }
