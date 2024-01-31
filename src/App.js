@@ -16,39 +16,7 @@ import { DataProvider } from './context/DataContext';
 // createBrowserRouter creates a custom router object and uses createRoutesFromELements to make
 // it possible to uses the same syntax as you would with browserRouter.
 
-const router = createBrowserRouter([
-  {
-    element: <DataProvider />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "post",
-        element: <NewPost />,
-      },
-      {
-        path: "post/:id",
-        element: <PostPage />,
-      },
-      {
-        path: "edit/:id",
-        element: <EditPage />,
-      },
-      {
-        path: "*",
-        element: <Missing />,
-      },
-    ],
-  },
-])
-
-/* const router = createBrowserRouter(createRoutesFromElements(
+const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
@@ -57,7 +25,7 @@ const router = createBrowserRouter([
     <Route path='newpost' element={<NewPost />} />
     <Route path='*' element={<Missing />} />
   </Route>
-)) */
+))
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
