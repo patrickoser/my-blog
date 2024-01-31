@@ -17,14 +17,7 @@ import { DataProvider } from './context/DataContext';
 // it possible to uses the same syntax as you would with browserRouter.
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path='/' element={<Layout />}>
-    <Route index element={<Home />} />
-    <Route path='about' element={<About />} />
-    <Route path='postpage' element={<PostPage />} />
-    <Route path='editpage' element={<EditPage />} />
-    <Route path='newpost' element={<NewPost />} />
-    <Route path='*' element={<Missing />} />
-  </Route>
+
 ))
 
 // App() returns router which contains all of the layout/routes for the site
@@ -33,7 +26,14 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-        <RouterProvider router={router} />
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='postpage' element={<PostPage />} />
+        <Route path='editpage' element={<EditPage />} />
+        <Route path='newpost' element={<NewPost />} />
+        <Route path='*' element={<Missing />} />
+      </Route>
     </div>
   )
 }
