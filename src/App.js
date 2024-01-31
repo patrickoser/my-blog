@@ -30,8 +30,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
-          <Route path='postpage' element={<PostPage />} />
-          <Route path='editpage' element={<EditPage />} />
+          <Route path='post/:id' element={<PostPage />} />
+          <Route path='edit/:id' element={<EditPage />} />
           <Route path='newpost' element={<NewPost />} />
           <Route path='*' element={<Missing />} />
         </Routes>
