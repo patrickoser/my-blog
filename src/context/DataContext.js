@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const DataContext = createContext({})
 
-export const DataProvider = () => {
+export const DataProvider = ({children}) => {
     const [posts, setPosts] = useState([
         {
             "posts": [
@@ -40,10 +40,7 @@ export const DataProvider = () => {
         <DataContext.Provider value={{
             contextValue
         }}>
-            <Header />
-            <Nav />
-            <Outlet />
-            <Footer />
+            {children}
         </DataContext.Provider>
     )
 }
