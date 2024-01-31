@@ -12,6 +12,8 @@ import NewPost from "./components/NewPost";
 import Missing from "./components/Missing";
 import Layout from "./components/Layout";
 import { DataProvider } from './context/DataContext';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // createBrowserRouter creates a custom router object and uses createRoutesFromELements to make
 // it possible to uses the same syntax as you would with browserRouter.
@@ -22,16 +24,17 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
+      <Header />
       <DataProvider>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='postpage' element={<PostPage />} />
-          <Route path='editpage' element={<EditPage />} />
-          <Route path='newpost' element={<NewPost />} />
-          <Route path='*' element={<Missing />} />
-        </Route>
+        <Nav />
+        <Route index element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='postpage' element={<PostPage />} />
+        <Route path='editpage' element={<EditPage />} />
+        <Route path='newpost' element={<NewPost />} />
+        <Route path='*' element={<Missing />} />
       </DataProvider>
+      <Footer />
     </div>
   )
 }
