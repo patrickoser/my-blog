@@ -22,14 +22,16 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='postpage' element={<PostPage />} />
-        <Route path='editpage' element={<EditPage />} />
-        <Route path='newpost' element={<NewPost />} />
-        <Route path='*' element={<Missing />} />
-      </Route>
+      <DataProvider>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='postpage' element={<PostPage />} />
+          <Route path='editpage' element={<EditPage />} />
+          <Route path='newpost' element={<NewPost />} />
+          <Route path='*' element={<Missing />} />
+        </Route>
+      </DataProvider>
     </div>
   )
 }
