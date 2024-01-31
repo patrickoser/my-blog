@@ -16,10 +16,6 @@ import { DataProvider } from './context/DataContext';
 // createBrowserRouter creates a custom router object and uses createRoutesFromELements to make
 // it possible to uses the same syntax as you would with browserRouter.
 
-const router = createBrowserRouter(createRoutesFromElements(
-
-))
-
 // App() returns router which contains all of the layout/routes for the site
 function App() {
 
