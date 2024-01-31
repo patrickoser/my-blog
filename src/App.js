@@ -3,14 +3,14 @@ import { useState, useEffect, useMemo } from 'react';
 import api from './api/postsAxios';
 
 // import Router from './components/Router';
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import PostPage from "./components/PostPage";
 import About from "./components/About";
 import EditPage from "./components/EditPage";
 import NewPost from "./components/NewPost";
 import Missing from "./components/Missing";
-import Layout from "./components/Layout";
+import Nav from './components/Nav';
 import { DataProvider } from './context/DataContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -27,12 +27,14 @@ function App() {
       <Header />
       <DataProvider>
         <Nav />
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='postpage' element={<PostPage />} />
-        <Route path='editpage' element={<EditPage />} />
-        <Route path='newpost' element={<NewPost />} />
-        <Route path='*' element={<Missing />} />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='postpage' element={<PostPage />} />
+          <Route path='editpage' element={<EditPage />} />
+          <Route path='newpost' element={<NewPost />} />
+          <Route path='*' element={<Missing />} />
+        </Routes>
       </DataProvider>
       <Footer />
     </div>
