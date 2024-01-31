@@ -38,7 +38,7 @@ const Home = () => {
     return (
         <div className="Home">
             <h1>Home</h1>
-            <Feed posts={posts} />
+            {posts.length ? <Feed posts={posts} /> : <p>No Posts to display</p>}
         </div>
     )
 }

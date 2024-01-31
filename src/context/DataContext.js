@@ -1,8 +1,12 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useMemo } from "react";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const DataContext = createContext({})
 
-export const DataProvider = ({ children }) => {
+export const DataProvider = () => {
     const [posts, setPosts] = useState([
         {
             "posts": [
@@ -23,16 +27,23 @@ export const DataProvider = ({ children }) => {
                     "title": "posting up",
                     "datetime": "January 1, 2024 1:57:53 PM",
                     "body": "on the block"
-                }
-            ]
-        }
+                },
+            ],
+        },
     ])
+
+    const contextValue = useMemo(() => ({
+        posts, setPosts
+    }), [posts, setPosts])
     
     return (
         <DataContext.Provider value={{
-            posts
+            contextValue
         }}>
-            {children}
+            <Header />
+            <Nav />
+            <Outlet />
+            <Footer />
         </DataContext.Provider>
     )
 }

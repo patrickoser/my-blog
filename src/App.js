@@ -29,18 +29,16 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "newpost",
+        path: "post",
         element: <NewPost />,
       },
       {
-        path: "postpage",
+        path: "post/:id",
         element: <PostPage />,
-        children: [
-          {
-            path: "editpage",
-            element: <EditPage />,
-          },
-        ],
+      },
+      {
+        path: "edit/:id",
+        element: <EditPage />,
       },
       {
         path: "*",
@@ -67,11 +65,9 @@ function App() {
   // Returns the jsx elements.
   return (
     <div className="App">
-      <DataProvider>
         <RouterProvider router={router} />
-      </DataProvider>
     </div>
-  );
+  )
 }
 
 export default App;
