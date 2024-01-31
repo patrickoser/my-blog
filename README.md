@@ -9,7 +9,7 @@ come back to it later.
 
 Attention:
 
-    Think about using 'createRoutesFromElements' so you can keep the original syntax. You can always try using 'createBrowserRouter' on a later project once you find a good resource for how to format your code with it.
+    I will use 'BrowserRouter' now because I am spending too much time fumbling around with 'createBrowserRouter'. After I finish this with 'BrowserRouter' I will look into what really makes 'BrowserRouter' and 'createBrowserRouter' different and decide if it is worth it to refactor with 'createBrowserRouter'. I have to get over my hesitation to ask questions I may see as dumb and be okay with looking for help when I feel I have exhausted all other resources.
 
 Steps:
     1. I need to figure out how to use the context api with 'createBrowserRouter'
