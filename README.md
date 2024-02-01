@@ -9,10 +9,19 @@ come back to it later.
 
 Attention:
 
-    I will use 'BrowserRouter' now because I am spending too much time fumbling around with 'createBrowserRouter'. After I finish this with 'BrowserRouter' I will look into what really makes 'BrowserRouter' and 'createBrowserRouter' different and decide if it is worth it to refactor with 'createBrowserRouter'. I have to get over my hesitation to ask questions I may see as dumb and be okay with looking for help when I feel I have exhausted all other resources.
+    I will use 'BrowserRouter' now because I am spending too much time fumbling around with
+    'createBrowserRouter'. After I finish this with 'BrowserRouter' I will look into what really
+    makes 'BrowserRouter' and 'createBrowserRouter' different and decide if it is worth it to
+    refactor with 'createBrowserRouter'. I have to get over my hesitation to ask questions I may
+    see as dumb and be okay with looking for help when I feel I have exhausted all other
+    resources.
 
 Steps:
-    1. Post is still unable to read the state of 'posts'. Probably a very simple missunderstanding on my part that I need to look into. I think I need to add more code to 'PostPage' probably is being referenced for the posts but hold no info... could be hindering all my progress. If true I could try some of the other solutions with 'createBrowserRouter' later.
+    1. Post is still unable to read the state of 'posts'. Probably a very simple
+    missunderstanding on my part that I need to look into. I think I need to add more code to
+    'PostPage' probably is being referenced for the posts but hold no info... could be hindering
+    all my progress. If true I could try some of the other solutions with 'createBrowserRouter'
+    later.
 
     5. Set up Axios to practice working with a database.
 
