@@ -7,6 +7,12 @@ const About = () => {
                 Different problems that I encounter, the solutions that I found, and my general
                 thoughts on all things programming.
             </p>
+            <br />
+            <p>
+                If you'd like to get in touch with me then head over to the contact page. There 
+                you will find my email, github, and, if you choose, a form you can fill out 
+                and I will get back to you ASAP.
+            </p>
         </main>
     )
 }
