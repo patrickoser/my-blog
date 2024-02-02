@@ -17,17 +17,11 @@ Attention:
     resources.
 
 Steps:
-    1. Post is still unable to read the state of 'posts'. Probably a very simple
-    missunderstanding on my part that I need to look into. I think I need to add more code to
-    'PostPage' probably is being referenced for the posts but hold no info... could be hindering
-    all my progress. If true I could try some of the other solutions with 'createBrowserRouter'
-    later.
+    1. Set up Axios to practice working with a database.
 
-    5. Set up Axios to practice working with a database.
+    2. Implement CRUD operations. 
 
-    6. Implement CRUD operations. 
-
-    7. Create forms to post blogs.
+    3. Create forms to post blogs.
 
 Extras: 
     1. Since this is going to be a blog just for me to edit/post to, I should add authorized roles to the site. That way when I enter the site I will be able to post/edit whatever I want and other people will only be able to view my posts/whatever I allow.
