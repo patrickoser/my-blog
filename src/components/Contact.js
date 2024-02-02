@@ -13,7 +13,10 @@ const Contact = () => {
 
     return(
         <main>
-            <h1>Contact</h1>
+            <h1>Need to get in touch?</h1>
+            <p><b>Name: </b>Patrick Oser</p>
+            <p><b>Email: </b>patrick.oser1@gmail.com</p>
+            <p><b>Github: </b></p>
             <form onSubmit={handleContactSubmit}>
                 <input 
                     type="text"
