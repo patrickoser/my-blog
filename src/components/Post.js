@@ -5,7 +5,7 @@ const Post = ({ post }) => {
     return (
         <div className="post">
             <Link to={`/post/${post.id}`}>
-                <h2>{post.title}</h2>
+                <h2><span className='postTitle'>{post.title}</span></h2>
                 <p className='postDate'>{post.datetime}</p>
             </Link>
             <p className='postBody'>{
