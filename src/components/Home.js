@@ -38,7 +38,6 @@ const Home = () => {
     return (
         <div className="Home">
             <h1>Home</h1>
-            {console.log(`Home: ${ posts.title }`)}
             {posts.length ? <Feed posts={posts} /> : <p>No Posts to display</p>}
         </div>
     )

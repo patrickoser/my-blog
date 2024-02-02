@@ -5,7 +5,6 @@ import Post from "./Post";
 const Feed = ({ posts }) => {
     return (
         <>
-            {console.log(`Feed: ${ posts.title }`)}
             {posts.map(post => (
                 <Post key={post.id} post={post} />
             ))}
