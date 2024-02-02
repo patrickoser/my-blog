@@ -1,13 +1,9 @@
 import { createContext, useState, useMemo } from "react";
-import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
 const DataContext = createContext({})
 
 export const DataProvider = ({ children }) => {
-    
+
     const [posts, setPosts] = useState([
         {
             "posts": [
