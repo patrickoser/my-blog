@@ -69,6 +69,10 @@ div.Header > * {
   background-color: #fff;
 }
 
+.About > h1 {
+  margin-bottom: 1rem;
+}
+
 .post {
   margin-top: .5rem;
 }
