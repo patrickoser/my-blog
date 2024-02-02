@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const DataContext = createContext({})
 
-export const DataProvider = ({children}) => {
+export const DataProvider = ({ children }) => {
     const [posts, setPosts] = useState([
         {
             "posts": [
@@ -32,13 +32,13 @@ export const DataProvider = ({children}) => {
         },
     ])
 
-    /* const contextValue = useMemo(() => ({
+    const contextValue = useMemo(() => ({
         posts, setPosts
-    }), [posts, setPosts]) */
+    }), [posts, setPosts])
     
     return (
         <DataContext.Provider value={{
-            posts
+            contextValue
         }}>
             {children}
         </DataContext.Provider>
