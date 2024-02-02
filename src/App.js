@@ -1,6 +1,4 @@
 import './App.css';
-import { useState, useEffect, useMemo } from 'react';
-import api from './api/postsAxios';
 
 // import Router from './components/Router';
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";

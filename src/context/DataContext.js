@@ -6,27 +6,29 @@ export const DataProvider = ({ children }) => {
 
     const [posts, setPosts] = useState([
         {
-            "posts": [
-                {
-                    "id": 1,
-                    "title": "1st post",
-                    "datetime": "January 1, 2024 11:47:39 AM",
-                    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },
-                {
-                    "id": 2,
-                    "title": "Second post",
-                    "datetime": "January 1, 2024 11:47:48 AM",
-                    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. two"
-                },
-                {
-                    "id": 3,
-                    "title": "posting up",
-                    "datetime": "January 1, 2024 1:57:53 PM",
-                    "body": "on the block"
-                },
-            ],
+            id: 1,
+            title: "My First Post",
+            datetime: "July 01, 2021 11:17:36 AM",
+            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
         },
+        {
+            id: 2,
+            title: "My 2nd Post",
+            datetime: "July 01, 2021 11:17:36 AM",
+            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
+        },
+        {
+            id: 3,
+            title: "My 3rd Post",
+            datetime: "July 01, 2021 11:17:36 AM",
+            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
+        },
+        {
+            id: 4,
+            title: "My Fourth Post",
+            datetime: "July 01, 2021 11:17:36 AM",
+            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
+        }
     ])
 
     /* const contextValue = useMemo(() => ({
