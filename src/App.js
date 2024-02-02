@@ -1,7 +1,7 @@
 import './App.css';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 // import Router from './components/Router';
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./components/Home";
 import PostPage from "./components/PostPage";
 import About from "./components/About";
@@ -11,10 +11,10 @@ import Missing from "./components/Missing";
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 // import context
 import { DataProvider } from './context/DataContext';
-import Contact from './components/Contact';
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
