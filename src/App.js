@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 
 // import context
 import { DataProvider } from './context/DataContext';
+import Contact from './components/Contact';
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='about' element={<About />} />
+            <Route path='contact' element={<Contact />} />
             <Route path='post/:id' element={<PostPage />} />
             <Route path='edit/:id' element={<EditPage />} />
             <Route path='newpost' element={<NewPost />} />
