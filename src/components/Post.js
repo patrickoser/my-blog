@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Post = ({ post }) => {
     return (
         <div className="post">
-            {console.log(`Post: ${post}`)}
+            {console.log(`Post: ${ post.title }`)}
             <Link to={`/post/${post.id}`}>
                 <h2>{post.title}</h2>
                 <p className='postDate'>{post.datetime}</p>

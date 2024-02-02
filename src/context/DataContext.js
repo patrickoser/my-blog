@@ -29,13 +29,13 @@ export const DataProvider = ({ children }) => {
         },
     ])
 
-    const contextValue = useMemo(() => ({
+    /* const contextValue = useMemo(() => ({
         posts, setPosts
-    }), [posts, setPosts])
+    }), [posts, setPosts]) */
     
     return (
         <DataContext.Provider value={{
-            contextValue
+            posts
         }}>
             {children}
         </DataContext.Provider>
