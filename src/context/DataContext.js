@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 const DataContext = createContext({})
 
 export const DataProvider = ({ children }) => {
+    
     const [posts, setPosts] = useState([
         {
             "posts": [
