@@ -133,10 +133,14 @@ form {
   padding: 1rem;
 }
 
-.Nav li a,
-.post > * {
+a {
   color: black;
   text-decoration: none;
+}
+
+.Nav li a,
+.post > * {
+
 }
 
 .Nav li:hover, 
@@ -155,4 +159,9 @@ form {
 .Nav li:hover a, 
 .Nav li:focus a {
   cursor: pointer;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
 }
