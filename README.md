@@ -16,6 +16,9 @@ Attention:
     see as dumb and be okay with looking for help when I feel I have exhausted all other
     resources.
 
+    Still not sure why I can import 'api' from './api/postsAxios.js' and refernce that server. 
+    Worth looking into so I have an understanding as opposed to just following something I found to work.
+
 Steps:
     1. Implement CRUD operations. 
 
