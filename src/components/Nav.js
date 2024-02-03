@@ -8,13 +8,15 @@ const Nav = () => {
     return (
         <div className="Nav">
             <nav>
-                <form onSubmit={(e) => e.preventDefault()}>
+                <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
                     <input 
                         className="searchInput"
                         type="text" 
-                        name="search" 
+                        name="search"
+                        placeholder="Search Posts"
+                        value={search}
                         id="search"
-                        onChange={handleSearchChange} 
+                        onChange={(e) => setSearch(e.target.value)} 
                     />
                     <button className="searchBtn">Search</button>
                 </form>
