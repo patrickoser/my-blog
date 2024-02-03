@@ -5,10 +5,12 @@ const DataContext = createContext({})
 
 export const DataProvider = ({ children }) => {
 
+    // Initialize state for following variables and methods to set them
     const [posts, setPosts] = useState([])
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([])
 
+    // Pulls posts in from server and updates state to display them when page loads
     useEffect(() => {
         const getPosts = async () => {
             try {
@@ -22,6 +24,7 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
+    // Updates list of posts depending on what the user types into search bar
     useEffect(() => {
         const filteredResults = posts.filter((post) => 
         ((post.body).toLowerCase()).includes(search.toLowerCase())
