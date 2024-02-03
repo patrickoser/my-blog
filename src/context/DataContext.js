@@ -22,7 +22,13 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
+    useEffect(() => {
+        const filteredResults = posts.filter((post) => 
+        ((post.body).toLowerCase()).includes(search.toLowerCase())
+        || ((post.title).toLowerCase()).includes(search.toLowerCase()))
 
+        setSearchResults(filteredResults)
+    }, [posts, search])
     
     return (
         <DataContext.Provider value={{

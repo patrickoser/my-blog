@@ -33,12 +33,12 @@ const Home = () => {
             </p>
         )}
     */
-   const { posts } = useContext(DataContext)
+   const { posts, searchResults } = useContext(DataContext)
 
     return (
         <div className="Home">
             <h1>Home</h1>
-            {posts.length ? <Feed posts={posts} /> : <p>No Posts to display</p>}
+            {posts.length ? <Feed posts={searchResults} /> : <p>No Posts to display</p>}
         </div>
     )
 }
