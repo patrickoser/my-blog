@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div className="Footer">
-            <h3>Footer</h3>
+            <a href="https://github.com/patrickoser">My GitHub</a>
         </div>
     )
 }
