@@ -17,11 +17,9 @@ Attention:
     resources.
 
 Steps:
-    1. Set up Axios to practice working with a database.
+    1. Implement CRUD operations. 
 
-    2. Implement CRUD operations. 
-
-    3. Create forms to post blogs.
+    2. Create forms to post blogs.
 
 Extras: 
     1. Since this is going to be a blog just for me to edit/post to, I should add authorized roles to the site. That way when I enter the site I will be able to post/edit whatever I want and other people will only be able to view my posts/whatever I allow.
