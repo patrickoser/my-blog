@@ -6,6 +6,8 @@ const DataContext = createContext({})
 export const DataProvider = ({ children }) => {
 
     const [posts, setPosts] = useState([])
+    const [search, setSearch] = useState('')
+    const [searchResults, setSearchResults] = useState([])
 
     useEffect(() => {
         const getPosts = async () => {
@@ -19,6 +21,8 @@ export const DataProvider = ({ children }) => {
 
         getPosts()
     }, [])
+
+
     
     return (
         <DataContext.Provider value={{
