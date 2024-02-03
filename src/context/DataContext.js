@@ -30,14 +30,10 @@ export const DataProvider = ({ children }) => {
             body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
         }
     ])
-
-    /* const contextValue = useMemo(() => ({
-        posts, setPosts
-    }), [posts, setPosts]) */
     
     return (
         <DataContext.Provider value={{
-            posts
+            posts, setPosts
         }}>
             {children}
         </DataContext.Provider>
