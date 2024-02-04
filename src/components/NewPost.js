@@ -2,8 +2,8 @@ import { useContext } from "react"
 import DataContext from "../context/DataContext"
 
 const NewPost = () => {
-
     const { createPost, postTitle, postBody, setPostTitle, setPostBody } = useContext(DataContext)
+    
     return (
         <main className="NewPost">
             <form onSubmit={createPost}method="post">
