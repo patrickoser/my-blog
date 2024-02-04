@@ -20,9 +20,9 @@ Attention:
     Worth looking into so I have an understanding as opposed to just following something I found to work.
 
 Steps:
-    1. Implement CRUD operations. 
+    1. Add ability to update and delete posts
 
-    2. Create forms to post blogs.
+    2. Keep commenting on all the different processes to hammer  home what everything does.
 
 Extras: 
     1. Since this is going to be a blog just for me to edit/post to, I should add authorized roles to the site. That way when I enter the site I will be able to post/edit whatever I want and other people will only be able to view my posts/whatever I allow.
