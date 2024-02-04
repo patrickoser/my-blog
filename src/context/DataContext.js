@@ -9,6 +9,12 @@ export const DataProvider = ({ children }) => {
     const [posts, setPosts] = useState([])
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([])
+    const [postTitle, setPostTitle] = useState('')
+    const [postBody, setPostBody] = useState('')
+
+    const createPost = async (e) => {
+
+    }
 
     // Pulls posts in from server and updates state to display them when page loads
     useEffect(() => {
