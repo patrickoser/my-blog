@@ -157,6 +157,11 @@ a {
   cursor: pointer;
 }
 
+.NewPost > form {
+  display: flex;
+  flex-direction: column;
+}
+
 .Footer {
   display: flex;
   justify-content: center;

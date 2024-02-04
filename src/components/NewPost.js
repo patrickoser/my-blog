@@ -3,10 +3,10 @@ import DataContext from "../context/DataContext"
 
 const NewPost = () => {
     const { createPost, postTitle, postBody, setPostTitle, setPostBody } = useContext(DataContext)
-    
+
     return (
         <main className="NewPost">
-            <form onSubmit={createPost}method="post">
+            <form onSubmit={createPost}>
                 <label htmlFor="postTitle">Title</label>
                 <input 
                     type="text" 
