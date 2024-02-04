@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import api from '../api/postsAxios'
+import { useNavigate } from "react-router-dom";
 
 const DataContext = createContext({})
 
@@ -11,6 +12,7 @@ export const DataProvider = ({ children }) => {
     const [searchResults, setSearchResults] = useState([])
     const [postTitle, setPostTitle] = useState('')
     const [postBody, setPostBody] = useState('')
+    const navigate = useNavigate()
 
     const createPost = async (e) => {
         e.preventDefault()
