@@ -5,7 +5,7 @@ const NewPost = () => {
 
     const { createPost, postTitle, postBody, setPostTitle, setPostBody } = useContext(DataContext)
     return (
-        <div className="NewPost">
+        <main className="NewPost">
             <form onSubmit={createPost}method="post">
                 <label htmlFor="postTitle">Title</label>
                 <input 
@@ -27,7 +27,7 @@ const NewPost = () => {
                 />
                 <button type="submit"></button>
             </form>
-        </div>
+        </main>
     )
 }
 
