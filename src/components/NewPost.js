@@ -6,7 +6,7 @@ const NewPost = () => {
 
     return (
         <main className="NewPost">
-            <form onSubmit={createPost}>
+            <form className="newPostForm" onSubmit={createPost}>
                 <label htmlFor="postTitle">Title</label>
                 <input 
                     type="text" 
