@@ -17,7 +17,7 @@ const NewPost = () => {
                     required 
                 />
                 <label htmlFor="postBody">Body</label>
-                <input 
+                <textarea 
                     type="text" 
                     id="postBody" 
                     value={postBody} 
