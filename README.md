@@ -20,9 +20,13 @@ Attention:
     Worth looking into so I have an understanding as opposed to just following something I found to work.
 
 Steps:
-    1. Add ability to update and delete posts
+    1. The edit button doesnt redirect to editpage so have to work that out
 
     2. Keep commenting on all the different processes to hammer  home what everything does.
+
+    3. figure out how to deploy the site.
+
+    4. Add CSS to make the site look a lot cleaner.
 
 Extras: 
     1. Since this is going to be a blog just for me to edit/post to, I should add authorized roles to the site. That way when I enter the site I will be able to post/edit whatever I want and other people will only be able to view my posts/whatever I allow.
