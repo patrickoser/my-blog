@@ -8,31 +8,6 @@ import DataContext from "../context/DataContext"
 // all available posts to the page.
 // If the boolean comes back as false, or < 1, then 'No posts to display' will be displayed.
 const Home = () => {
-
-    /* 
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        const fetchPosts = async () => {
-          try {
-            const response = await api.get('/posts');
-            console.log(setPosts(response.data))
-            setPosts(response.data);
-          } catch (err) {
-            console.log(err);
-          }
-        }
-        fetchPosts();
-      }, [])
-
-                {posts.length ? (
-            <Feed posts={posts} />
-        ) : (
-            <p>
-                No posts to display.
-            </p>
-        )}
-    */
    const { posts, searchResults } = useContext(DataContext)
 
     return (
