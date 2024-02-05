@@ -13,6 +13,8 @@ export const DataProvider = ({ children }) => {
     const [searchResults, setSearchResults] = useState([])
     const [postTitle, setPostTitle] = useState('')
     const [postBody, setPostBody] = useState('')
+    const [editTitle, setEditTitle] = useState('')
+    const [editBody, setEditBody] = useState('')
     const navigate = useNavigate()
 
     // The (C)reate portion of CRUD.
@@ -58,6 +60,7 @@ export const DataProvider = ({ children }) => {
     }, [])
 
     const updatePost = async (id) => {
+        const datetime = format(new Date(), 'MMMM dd yyyy pp')
         const updatesPost = { id, title: editTitle, datetime, body: editBody }
         try {
             const response = await api.put(`/posts/${id}`, updatesPost)
