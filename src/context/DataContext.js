@@ -15,6 +15,14 @@ export const DataProvider = ({ children }) => {
     const [postBody, setPostBody] = useState('')
     const navigate = useNavigate()
 
+    // id is assigned based on the number of posts already created.
+    // datetime is assigned based upon time of post creation
+    // newPost variable is declared as an object with four key/value pairs
+    // Try to access '/posts' data in server and add 'newPost'
+    // 'allPosts' variable is delcared with the spread operator filling in all current posts
+    // and adding the 'newPost', represented as 'response.data', to the end.
+    // Set state using 'setPosts'
+    // Wipe 'postTitle' and 'postBody' with 'setPostTitle' and 'setPostBody'
     const createPost = async (e) => {
         e.preventDefault()
         const id = posts.length ? posts[posts.length - 1].id + 1 : 1
@@ -33,6 +41,7 @@ export const DataProvider = ({ children }) => {
     }
 
     // Pulls posts in from server and updates state to display them when page loads
+    // Or the (R)ead portion of CRUD
     useEffect(() => {
         const getPosts = async () => {
             try {
