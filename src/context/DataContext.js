@@ -15,6 +15,7 @@ export const DataProvider = ({ children }) => {
     const [postBody, setPostBody] = useState('')
     const navigate = useNavigate()
 
+    // The (C)reate portion of CRUD.
     // id is assigned based on the number of posts already created.
     // datetime is assigned based upon time of post creation
     // newPost variable is declared as an object with four key/value pairs
@@ -57,6 +58,9 @@ export const DataProvider = ({ children }) => {
     }, [])
 
     // Updates list of posts depending on what the user types into search bar
+    // Filter the posts data and for each postconvert it to lowercase and check to see if the
+    // 'postBody' or 'postTitle' matches what is being entered into the search bar.
+    // setSearchResults with 'filteredResults' and then reverse them.
     useEffect(() => {
         const filteredResults = posts.filter((post) => 
         ((post.body).toLowerCase()).includes(search.toLowerCase())
