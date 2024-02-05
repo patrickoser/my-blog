@@ -58,12 +58,13 @@ export const DataProvider = ({ children }) => {
     }, [])
 
     const deletePost = async (id) => {
+        console.log({ id })
         try {
-            const response = await api.delete(`/posts/:${id}`)
-            setPosts(response.data)
+            await api.delete(`/posts/${id}`)
+            setPosts(posts.filter((post) => post.id !== id))
             navigate('/')
         } catch(err) {
-            console.log(err)
+            console.log(err.message)
         }
     }
 
