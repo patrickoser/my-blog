@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import api from '../api/postsAxios'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { format } from 'date-fns'
 
 const DataContext = createContext({})
@@ -56,6 +56,14 @@ export const DataProvider = ({ children }) => {
 
         getPosts()
     }, [])
+
+    const deletePost = async () => {
+        const { id } = useParams()
+        try {
+            const response = await api.delete(`/posts/:${id}`)
+            setPosts(response.data)
+        }
+    }
 
     // Updates list of posts depending on what the user types into search bar
     // Filter the posts data and for each postconvert it to lowercase and check to see if the
