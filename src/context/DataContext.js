@@ -52,7 +52,7 @@ export const DataProvider = ({ children }) => {
         ((post.body).toLowerCase()).includes(search.toLowerCase())
         || ((post.title).toLowerCase()).includes(search.toLowerCase()))
 
-        setSearchResults(filteredResults)
+        setSearchResults(filteredResults.reverse())
     }, [posts, search])
     
     return (
