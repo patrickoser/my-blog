@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import DataContext from '../context/DataContext'
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 const PostPage = () => {
     const { posts, deletePost } = useContext(DataContext)
@@ -16,6 +16,7 @@ const PostPage = () => {
                         <p className="postDate">{post.datetime}</p>
                         <p className="postBody">{post.body}</p>
                         <button className="deleteBtn" onClick={() => deletePost(post.id)}>Delete</button>
+                        <Link to={`/editpost/${post.id}`}><button className="editBtn">Edit</button></Link>
                     </>
                 }
             </div>
