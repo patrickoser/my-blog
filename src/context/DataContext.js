@@ -57,11 +57,13 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
-    const deletePost = async () => {
-        const { id } = useParams()
+    const deletePost = async (id) => {
         try {
             const response = await api.delete(`/posts/:${id}`)
             setPosts(response.data)
+            navigate('/')
+        } catch(err) {
+            console.log(err)
         }
     }
 
