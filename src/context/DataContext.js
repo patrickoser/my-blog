@@ -57,6 +57,19 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
+    const updatePost = async (id) => {
+        const updatesPost = { id, title: editTitle, datetime, body: editBody }
+        try {
+            const response = await api.put(`/posts/${id}`, updatesPost)
+            setPosts(posts.map(post => post.id === id ? { ...response.data } : post))
+            setEditTitle('')
+            setEditBody('')
+            navigate('/')
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
     const deletePost = async (id) => {
         console.log({ id })
         try {
