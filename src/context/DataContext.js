@@ -22,7 +22,8 @@ export const DataProvider = ({ children }) => {
     // 'allPosts' variable is delcared with the spread operator filling in all current posts
     // and adding the 'newPost', represented as 'response.data', to the end.
     // Set state using 'setPosts'
-    // Wipe 'postTitle' and 'postBody' with 'setPostTitle' and 'setPostBody'
+    // Wipe 'postTitle' and 'postBody' with 'setPostTitle' and 'setPostBody'.
+    // If an error is caught then log that error to console.
     const createPost = async (e) => {
         e.preventDefault()
         const id = posts.length ? posts[posts.length - 1].id + 1 : 1
