@@ -24,7 +24,7 @@ Steps:
 
     2. Keep commenting on all the different processes to hammer  home what everything does.
 
-    3. figure out how to deploy the site.
+    3. figure out how to deploy the site and set up proper backend.
 
     4. Add CSS to make the site look a lot cleaner.
 
