@@ -101,7 +101,7 @@ export const DataProvider = ({ children }) => {
         <DataContext.Provider value={{
             posts, setPosts, search, setSearch, searchResults, setSearchResults,
             postTitle, setPostTitle, postBody, setPostBody, createPost, deletePost,
-            updatePost
+            updatePost, editTitle, setEditTitle, editBody, setEditBody
         }}>
             {children}
         </DataContext.Provider>
