@@ -6,7 +6,7 @@ const EditPage = () => {
 
     return (
         <main className="EditPost">
-            <form className="editPostForm" onSubmit={updatePost}>
+            <form className="editForm" onSubmit={updatePost}>
                 <label htmlFor="editTitle">Title</label>
                 <input 
                     type="text" 
