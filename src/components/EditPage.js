@@ -1,23 +1,28 @@
+import { useContext } from "react"
+import DataContext from "../context/DataContext"
+
 const EditPage = () => {
+    const { updatePost, editTitle, editBody, setEditBody, setEditTitle } = useContext(DataContext)
+
     return (
-        <main className="NewPost">
-            <form className="newPostForm" onSubmit={createPost}>
-                <label htmlFor="postTitle">Title</label>
+        <main className="EditPost">
+            <form className="editPostForm" onSubmit={updatePost}>
+                <label htmlFor="editTitle">Title</label>
                 <input 
                     type="text" 
-                    id="postTitle" 
-                    value={postTitle} 
-                    name="postTitle" 
-                    onChange={(e) => setPostTitle(e.target.value)} 
+                    id="editTitle" 
+                    value={editTitle} 
+                    name="editTitle" 
+                    onChange={(e) => setEditTitle(e.target.value)} 
                     required 
                 />
-                <label htmlFor="postBody">Body</label>
+                <label htmlFor="editBody">Body</label>
                 <textarea 
                     type="text" 
-                    id="postBody" 
-                    value={postBody} 
-                    name="postBody" 
-                    onChange={(e) => setPostBody(e.target.value)} 
+                    id="editBody" 
+                    value={editBody} 
+                    name="editBody" 
+                    onChange={(e) => setEditBody(e.target.value)} 
                     required 
                 />
                 <button type="submit">Submit</button>
