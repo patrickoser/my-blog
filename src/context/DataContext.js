@@ -59,7 +59,8 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
-    const updatePost = async (id) => {
+    const updatePost = async (id, e) => {
+        e.preventDefault()
         const datetime = format(new Date(), 'MMMM dd yyyy pp')
         const updatesPost = { id, title: editTitle, datetime, body: editBody }
         try {

@@ -5,7 +5,7 @@ const EditPage = () => {
     const { updatePost, editTitle, editBody, setEditBody, setEditTitle } = useContext(DataContext)
 
     return (
-        <main className="EditPost">
+        <main className="EditPage">
             <form className="editForm" onSubmit={updatePost}>
                 <label htmlFor="editTitle">Title</label>
                 <input 

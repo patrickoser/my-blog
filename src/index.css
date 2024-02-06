@@ -157,17 +157,21 @@ a {
   cursor: pointer;
 }
 
-.newPostForm {
+.newPostForm,
+.editForm {
   display: flex;
   flex-direction: column;
 }
 
-.newPostForm label {
+.newPostForm label,
+.editForm label {
   margin-top: 1rem;
 }
 
 .newPostForm input[type='text'], 
-.newPostForm textarea {
+.newPostForm textarea,
+.editForm input[type='text'],
+.editForm textarea {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   min-height: 48px;
@@ -178,11 +182,13 @@ a {
   outline: none;
 }
 
-.newPostForm textarea {
+.newPostForm textarea,
+.editForm textarea {
   height: 100px;
 }
 
-.newPostForm button {
+.newPostForm button,
+.editForm button {
   margin-top: 1rem;
   height: 48px;
   min-width: 48px;
