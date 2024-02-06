@@ -1,12 +1,15 @@
 import { useContext } from "react"
+import { useParams } from "react-router-dom"
 import DataContext from "../context/DataContext"
 
 const EditPage = () => {
-    const { updatePost, editTitle, editBody, setEditBody, setEditTitle } = useContext(DataContext)
+    const { updatePost, editTitle, editBody, setEditBody, setEditTitle, posts } = useContext(DataContext)
+    const { id } = useParams()
+    const post = posts.find(post => (post.id).toString() === id)
 
     return (
         <main className="EditPage">
-            <form className="editForm" onSubmit={updatePost}>
+            <form className="editForm" onSubmit={() => updatePost(post.id)}>
                 <label htmlFor="editTitle">Title</label>
                 <input 
                     type="text" 

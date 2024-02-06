@@ -62,9 +62,9 @@ export const DataProvider = ({ children }) => {
     const updatePost = async (id, e) => {
         e.preventDefault()
         const datetime = format(new Date(), 'MMMM dd yyyy pp')
-        const updatesPost = { id, title: editTitle, datetime, body: editBody }
+        const updatedPost = { id, title: editTitle, datetime, body: editBody }
         try {
-            const response = await api.put(`/posts/${id}`, updatesPost)
+            const response = await api.put(`/posts/${id}`, updatedPost)
             setPosts(posts.map(post => post.id === id ? { ...response.data } : post))
             setEditTitle('')
             setEditBody('')
