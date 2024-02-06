@@ -16,7 +16,7 @@ const PostPage = () => {
                         <p className="postDate">{post.datetime}</p>
                         <p className="postBody">{post.body}</p>
                         <button className="deleteBtn" onClick={() => deletePost(post.id)}>Delete</button>
-                        <Link to={`/editpost/${post.id}`}><button className="editBtn">Edit</button></Link>
+                        <Link to={`/edit/${post.id}`}><button className="editBtn">Edit</button></Link>
                     </>
                 }
             </div>
