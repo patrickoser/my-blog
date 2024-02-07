@@ -75,7 +75,6 @@ export const DataProvider = ({ children }) => {
     }
 
     const deletePost = async (id) => {
-        console.log({ id })
         try {
             await api.delete(`/posts/${id}`)
             setPosts(posts.filter((post) => post.id !== id))
