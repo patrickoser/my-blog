@@ -12,12 +12,12 @@ const Contact = () => {
     }
 
     return(
-        <main>
+        <main className="contactPage">
             <h1>Need to get in touch?</h1>
             <p><b>Name: </b>Patrick Oser</p>
             <p><b>Email: </b>patrick.oser1@gmail.com</p>
             <p><b>Github: </b></p>
-            <form onSubmit={handleContactSubmit}>
+            <form onSubmit={handleContactSubmit} className="contactForm">
                 <input 
                     type="text"
                     name="name"
@@ -26,13 +26,14 @@ const Contact = () => {
                     onChange={(e) => setName(e.target.value)} 
                 />
                 <input 
-                    type="email"
+                    type="text"
                     name="email"
                     placeholder="Your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea 
+                    type="textarea"
                     name="message" 
                     id="message"
                     placeholder="Your message"
