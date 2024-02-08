@@ -59,8 +59,8 @@ export const DataProvider = ({ children }) => {
         getPosts()
     }, [])
 
-    const updatePost = async (id, e) => {
-        e.preventDefault()
+    const updatePost = async (id) => {
+        // e.preventDefault()
         const datetime = format(new Date(), 'MMMM dd yyyy pp')
         const updatedPost = { id, title: editTitle, datetime, body: editBody }
         try {
@@ -68,9 +68,10 @@ export const DataProvider = ({ children }) => {
             setPosts(posts.map(post => post.id === id ? { ...response.data } : post))
             setEditTitle('')
             setEditBody('')
-            navigate('/')
         } catch(err) {
             console.log(err)
+        } finally {
+            navigate('/')
         }
     }
 
