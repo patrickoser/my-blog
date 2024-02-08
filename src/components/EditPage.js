@@ -9,7 +9,7 @@ const EditPage = () => {
 
     return (
         <main className="EditPage">
-            <form className="editForm" onSubmit={() => updatePost(post.id)}>
+            <form className="editForm" onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="editTitle">Title</label>
                 <input 
                     type="text" 
@@ -28,7 +28,7 @@ const EditPage = () => {
                     onChange={(e) => setEditBody(e.target.value)} 
                     required 
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" onClick={() => updatePost(post.id)}>Submit</button>
             </form>
         </main>
     )
