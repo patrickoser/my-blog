@@ -41,8 +41,9 @@ Steps:
 
     6. Add CSS to make the site look a lot cleaner.
 
-Extras: 
-    1. Since this is going to be a blog just for me to edit/post to, I should add authorized roles to the site. That way when I enter the site I will be able to post/edit whatever I want and other people will only be able to view my posts/whatever I allow.
+    7. Since this is going to be a blog just for me to edit/post to, I should add authorized
+    roles to the site. That way when I enter the site I will be able to post/edit whatever I
+    want and other people will only be able to view my posts/whatever I allow.
 
 # Getting Started with Create React App
 
