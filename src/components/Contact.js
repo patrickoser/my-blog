@@ -12,7 +12,7 @@ const Contact = () => {
     }
 
     return(
-        <main className="contactPage">
+        <main className="ContactPage">
             <h1>Need to get in touch?</h1>
             <p><b>Name: </b>Patrick Oser</p>
             <p><b>Email: </b>patrick.oser1@gmail.com</p>
