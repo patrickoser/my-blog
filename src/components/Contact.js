@@ -16,7 +16,8 @@ const Contact = () => {
             <h1>Need to get in touch?</h1>
             <p><b>Name: </b>Patrick Oser</p>
             <p><b>Email: </b>patrick.oser1@gmail.com</p>
-            <p><b>Github: </b></p>
+            <p><b>Github: </b><a href="https://github.com/patrickoser">https://github.com/patrickoser</a></p>
+            <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/patrick-oser-841648260/">https://www.linkedin.com/in/patrick-oser-841648260/</a></p>
             <form onSubmit={handleContactSubmit} className="contactForm">
                 <input 
                     type="text"

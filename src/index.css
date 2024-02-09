@@ -29,7 +29,7 @@ body {
 
 .App {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -204,6 +204,10 @@ a {
   flex-direction: column;
 }
 
+.contactForm > input[type=text] {
+  flex-direction: row;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -231,7 +235,6 @@ a {
 .contactForm [type=submit]:hover {
   background-color: #45a049;
 }
-
 
 .Footer {
   display: flex;
