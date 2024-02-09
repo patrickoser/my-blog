@@ -27,7 +27,12 @@ Steps:
     gets too small move it back below the header. Both of these changes will give the site
     a responsive feeling.
 
-    3. Figure out how to make the contact page direct any messages people input to my email.
+    3. Figure out how to make the contact page direct any messages people input to my email. 
+    Also want to have the contact page structured so that when the screen is big enough it
+    displays in two columns. My contact information on the left and the contact form on the
+    right. Next step would move everything into one column, with my contact info on top, but
+    name and email still side by side and the final step moving name and email into a single
+    column as well.
 
     4. Keep commenting on all the different processes to hammer home what everything does.
 
