@@ -20,6 +20,7 @@ Attention:
     Worth looking into so I have an understanding as opposed to just following something I found to work.
 
 Steps:
+
     1. Format contact page so that the input section for name and email are side by side when 
     the screen is big enough and into a single column when it gets too small.
 
