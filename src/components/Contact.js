@@ -9,7 +9,7 @@ const Contact = () => {
             <p><b>Email: </b>patrick.oser1@gmail.com</p>
             <p><b>Github: </b><a href="https://github.com/patrickoser">https://github.com/patrickoser</a></p>
             <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/patrick-oser-841648260/">https://www.linkedin.com/in/patrick-oser-841648260/</a></p>
-            <form action="https://formsubmit.co/your@email.com" className="contactForm">
+            <form action="https://formsubmit.co/your@email.com" method="POST" className="contactForm">
                 <label>Name</label>
                 <input 
                     type="text"
@@ -34,6 +34,7 @@ const Contact = () => {
                     rows="10" 
                     required
                 />
+                <button type="submit">Send</button>
             </form>
         </main>
     )
