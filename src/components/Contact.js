@@ -9,22 +9,18 @@ const Contact = () => {
             <p><b>Email: </b>patrick.oser1@gmail.com</p>
             <p><b>Github: </b><a href="https://github.com/patrickoser">https://github.com/patrickoser</a></p>
             <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/patrick-oser-841648260/">https://www.linkedin.com/in/patrick-oser-841648260/</a></p>
-            <form onSubmit={handleContactSubmit} className="contactForm">
+            <form action="" className="contactForm">
                 <label htmlFor="">Name</label>
                 <input 
                     type="text"
                     name="name"
                     placeholder="Your name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)} 
                 />
                 <label htmlFor="">Email</label>
                 <input 
                     type="text"
                     name="email"
                     placeholder="Your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <label htmlFor="">Message</label>
                 <textarea 
