@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const Contact = () => {
 
     return(
@@ -17,14 +15,14 @@ const Contact = () => {
                     placeholder="Your name"
                     required
                 />
-                <label htmlFor="">Email</label>
+                <label>Email</label>
                 <input 
                     type="text"
                     name="email"
                     placeholder="Your email"
                     required
                 />
-                <label htmlFor="">Message</label>
+                <label>Message</label>
                 <textarea 
                     type="textarea"
                     name="message" 
