@@ -21,28 +21,25 @@ Attention:
 
 Steps:
 
-    1. Format contact page so that the input section for name and email are side by side when 
-    the screen is big enough and into a single column when it gets too small.
-
-    2. Move the nav bar into a sidebar when the screen is big enough and when the screen
+    1. Move the nav bar into a sidebar when the screen is big enough and when the screen
     gets too small move it back below the header. Both of these changes will give the site
     a responsive feeling.
 
-    3. Figure out how to make the contact page direct any messages people input to my email. 
+    2. formsubmit still isnt allowing me to connect to their server. 
     Also want to have the contact page structured so that when the screen is big enough it
     displays in two columns. My contact information on the left and the contact form on the
     right. Next step would move everything into one column, with my contact info on top, but
     name and email still side by side and the final step moving name and email into a single
     column as well.
 
-    4. Keep commenting on all the different processes to hammer home what everything does.
+    3. Keep commenting on all the different processes to hammer home what everything does.
 
-    5. figure out how to deploy the site and set up proper backend. Probably easiest to use 
+    4. figure out how to deploy the site and set up proper backend. Probably easiest to use 
     firebase now but look up some tutorials on how different ways to make it work.
 
-    6. Add CSS to make the site look a lot cleaner.
+    5. Add CSS to make the site look a lot cleaner.
  
-    7. Since this is going to be a blog just for me to edit/post to, I should add authorized
+    6. Since this is going to be a blog just for me to edit/post to, I should add authorized
     roles to the site. That way when I enter the site I will be able to post/edit whatever I
     want and other people will only be able to view my posts/whatever I allow.
 
