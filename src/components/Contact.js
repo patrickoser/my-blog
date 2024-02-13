@@ -19,6 +19,7 @@ const Contact = () => {
             <p><b>Github: </b><a href="https://github.com/patrickoser">https://github.com/patrickoser</a></p>
             <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/patrick-oser-841648260/">https://www.linkedin.com/in/patrick-oser-841648260/</a></p>
             <form onSubmit={handleContactSubmit} className="contactForm">
+                <label htmlFor="">Name</label>
                 <input 
                     type="text"
                     name="name"
@@ -26,6 +27,7 @@ const Contact = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)} 
                 />
+                <label htmlFor="">Email</label>
                 <input 
                     type="text"
                     name="email"
@@ -33,6 +35,7 @@ const Contact = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
+                <label htmlFor="">Message</label>
                 <textarea 
                     type="textarea"
                     name="message" 
