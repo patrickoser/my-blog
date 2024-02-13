@@ -5,7 +5,7 @@ Practice React, all its nuances, and get a place to record my progress so far.
 Let's Build! You got this.
 
 Keep commenting on everything you do so that you can know exactly what something does when you 
-come back to it later.
+come back to it later. 
 
 Attention:
 
