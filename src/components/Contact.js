@@ -1,15 +1,6 @@
 import { useState } from "react"
 
 const Contact = () => {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
-
-    const handleContactSubmit = (e) => {
-        e.preventDefault()
-
-        // Set up backend to handle the users contact information
-    }
 
     return(
         <main className="ContactPage">
