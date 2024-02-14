@@ -32,6 +32,7 @@ const Contact = () => {
                     rows="10" 
                     required
                 />
+                <input type="hidden" name="_captcha" value={false} />
                 <button type="submit">Send</button>
             </form>
         </main>
