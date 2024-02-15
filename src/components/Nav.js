@@ -6,36 +6,34 @@ const Nav = () => {
     const { search, setSearch } = useContext(DataContext)
 
     return (
-        <div className="Nav">
-            <nav className="container-fluid">
-                <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
-                    <input 
-                        className="searchInput"
-                        type="text" 
-                        name="search"
-                        placeholder="Search Posts"
-                        value={search}
-                        id="search"
-                        onChange={(e) => setSearch(e.target.value)} 
-                    />
-                    <button className="searchBtn">Search</button>
-                </form>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/newpost">Post</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav className="container-fluid">
+            <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
+                <input 
+                    className="searchInput"
+                    type="text" 
+                    name="search"
+                    placeholder="Search Posts"
+                    value={search}
+                    id="search"
+                    onChange={(e) => setSearch(e.target.value)} 
+                />
+                <button className="searchBtn">Search</button>
+            </form>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/newpost">Post</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+            </ul>
+        </nav>
     )
 }
 

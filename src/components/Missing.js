@@ -1,8 +1,8 @@
 const Missing = () => {
     return (
-        <div className="Missing">
+        <main className="container-fluid">
             <h1>Missing</h1>
-        </div>
+        </main>
     )
 }
 
