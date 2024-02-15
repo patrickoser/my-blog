@@ -2,11 +2,11 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
-        <div className="Header">
+        <header className="container-fluid">
             <Link to={'/'}>
                 <h2>My Blog</h2>
             </Link>
-        </div>
+        </header>
     )
 }
 
