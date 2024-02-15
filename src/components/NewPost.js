@@ -5,7 +5,7 @@ const NewPost = () => {
     const { createPost, postTitle, postBody, setPostTitle, setPostBody } = useContext(DataContext)
 
     return (
-        <main>
+        <main className="container-fluid">
             <form onSubmit={createPost}>
                 <label htmlFor="postTitle">Title</label>
                 <input 
