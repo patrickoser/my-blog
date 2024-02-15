@@ -8,8 +8,8 @@ const EditPage = () => {
     const post = posts.find(post => (post.id).toString() === id)
 
     return (
-        <main className="EditPage">
-            <form className="editForm" onSubmit={(e) => e.preventDefault()}>
+        <main className="container-fluid">
+            <form onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="editTitle">Title</label>
                 <input 
                     type="text" 
