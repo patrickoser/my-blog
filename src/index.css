@@ -1,3 +1,5 @@
+@use "@picocss/pico/scss/pico";
+
 * {
   margin: 0;
   padding: 0;
