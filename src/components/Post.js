@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom'
 // Post takes post as a parameter 
 const Post = ({ post }) => {
     return (
-        <div className="post">
+        <main>
             <Link to={`/post/${post.id}`}>
-                <h2><span className='postTitle'>{post.title}</span></h2>
-                <p className='postDate'>{post.datetime}</p>
+                <h2><span>{post.title}</span></h2>
+                <p>{post.datetime}</p>
             </Link>
-            <p className='postBody'>{
+            <p>{
                 (post.body).length <= 25
                 ? post.body
                 : `${(post.body).slice(0, 50)}...`
             }</p>
-        </div>
+        </main>
     )
 }
 
