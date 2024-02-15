@@ -11,10 +11,10 @@ const Home = () => {
    const { posts, searchResults } = useContext(DataContext)
 
     return (
-        <div className="Home">
+        <main className="container-fluid">
             <h1>Home</h1>
             {posts.length ? <Feed posts={searchResults} /> : <p>No Posts to display</p>}
-        </div>
+        </main>
     )
 }
 
