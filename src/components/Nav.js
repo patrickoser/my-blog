@@ -7,7 +7,7 @@ const Nav = () => {
 
     return (
         <div className="Nav">
-            <nav>
+            <nav className="container-fluid">
                 <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
                     <input 
                         className="searchInput"
