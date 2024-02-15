@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <main className="About">
+        <main className="container-fluid">
             <h1>Welcome to my blog!</h1>
             <p>
                 This is a place where I will write about my journey as I learn how to code.
