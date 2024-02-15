@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div className="Footer">
+        <footer>
             <a href="https://github.com/patrickoser">My GitHub</a>
-        </div>
+        </footer>
     )
 }
 
