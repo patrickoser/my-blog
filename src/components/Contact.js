@@ -1,8 +1,8 @@
 const Contact = () => {
 
     return(
-        <main className="ContactPage">
-            <section className="contactInfo">
+        <main className="container-fluid">
+            <section>
                 <h1>Need to get in touch?</h1>
                 <p><b>Name: </b>Patrick Oser</p>
                 <p><b>Email: </b>patrick.oser1@gmail.com</p>
