@@ -8,7 +8,7 @@ const PostPage = () => {
     const post = posts.find(post => (post.id).toString() === id)
 
     return (
-        <main>
+        <main className="container-fluid">
             <div>
                 {
                     <>
