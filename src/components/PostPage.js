@@ -8,15 +8,15 @@ const PostPage = () => {
     const post = posts.find(post => (post.id).toString() === id)
 
     return (
-        <main className="PostPage">
+        <main>
             <div className="post">
                 {
                     <>
                         <h1>{post.title}</h1>
-                        <p className="postDate">{post.datetime}</p>
-                        <p className="postBody">{post.body}</p>
-                        <button className="deleteBtn" onClick={() => deletePost(post.id)}>Delete</button>
-                        <Link to={`/edit/${post.id}`}><button className="editBtn">Edit</button></Link>
+                        <p>{post.datetime}</p>
+                        <p>{post.body}</p>
+                        <button onClick={() => deletePost(post.id)}>Delete</button>
+                        <Link to={`/edit/${post.id}`}><button>Edit</button></Link>
                     </>
                 }
             </div>
