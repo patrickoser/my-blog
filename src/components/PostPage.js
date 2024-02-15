@@ -9,7 +9,7 @@ const PostPage = () => {
 
     return (
         <main>
-            <div className="post">
+            <div>
                 {
                     <>
                         <h1>{post.title}</h1>
