@@ -34,7 +34,9 @@ Steps:
     4. figure out how to deploy the site and set up proper backend. Probably easiest to use 
     firebase now but look up some tutorials on how different ways to make it work.
 
-    5. 
+    5. I could maybe keeping the authorized role features, e.g creating, editing, and deleting posts, and assign a 
+    dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
+    it.
 
  
     6. 
