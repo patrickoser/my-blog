@@ -21,29 +21,23 @@ Attention:
 
 Steps:
 
-    0. Finish implmenting pico.
+    0. Add button to switch between light and dark theme to the right side of the header.
 
-    1. Move the nav bar into a sidebar when the screen is big enough and when the screen
-    gets too small move it back below the header. Both of these changes will give the site
-    a responsive feeling.
+    1. Add a feature that switches color themes when you click to a different page or reload the page.
 
-    2. formsubmit still isnt allowing me to connect to their server. 
-    Also want to have the contact page structured so that when the screen is big enough it
-    displays in two columns. My contact information on the left and the contact form on the
-    right. Next step would move everything into one column, with my contact info on top, but
-    name and email still side by side and the final step moving name and email into a single
-    column as well.
+    2. Since this is going to be a blog just for me to edit/post to, I should add authorized
+    roles to the site. That way when I enter the site I will be able to post/edit whatever I
+    want and other people will only be able to view my posts/whatever I allow.
 
     3. Keep commenting on all the different processes to hammer home what everything does.
 
     4. figure out how to deploy the site and set up proper backend. Probably easiest to use 
     firebase now but look up some tutorials on how different ways to make it work.
 
-    5. Add CSS to make the site look a lot cleaner.
+    5. 
+
  
-    6. Since this is going to be a blog just for me to edit/post to, I should add authorized
-    roles to the site. That way when I enter the site I will be able to post/edit whatever I
-    want and other people will only be able to view my posts/whatever I allow.
+    6. 
 
 # Getting Started with Create React App
 
