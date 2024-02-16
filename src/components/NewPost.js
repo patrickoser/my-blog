@@ -5,29 +5,31 @@ const NewPost = () => {
     const { createPost, postTitle, postBody, setPostTitle, setPostBody } = useContext(DataContext)
 
     return (
-        <main className="container-fluid">
-            <form onSubmit={createPost}>
-                <label htmlFor="postTitle">Title</label>
-                <input 
-                    type="text" 
-                    id="postTitle" 
-                    value={postTitle} 
-                    name="postTitle" 
-                    onChange={(e) => setPostTitle(e.target.value)} 
-                    required 
-                />
-                <label htmlFor="postBody">Body</label>
-                <textarea 
-                    type="text" 
-                    id="postBody" 
-                    value={postBody} 
-                    name="postBody" 
-                    onChange={(e) => setPostBody(e.target.value)} 
-                    required 
-                />
-                <button type="submit">Submit</button>
-            </form>
-        </main>
+        <div className="container">
+            <article>
+                <form onSubmit={createPost}>
+                    <label htmlFor="postTitle">Title</label>
+                    <input 
+                        type="text" 
+                        id="postTitle" 
+                        value={postTitle} 
+                        name="postTitle" 
+                        onChange={(e) => setPostTitle(e.target.value)} 
+                        required 
+                    />
+                    <label htmlFor="postBody">Body</label>
+                    <textarea 
+                        type="text" 
+                        id="postBody" 
+                        value={postBody} 
+                        name="postBody" 
+                        onChange={(e) => setPostBody(e.target.value)} 
+                        required 
+                    />
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </div>
     )
 }
 
