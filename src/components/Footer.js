@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="container-fluid">
-            <a href="https://github.com/patrickoser">My GitHub</a>
+        <footer>
+            <h5>
+                <a href="https://github.com/patrickoser">My GitHub</a>
+            </h5>
         </footer>
     )
 }

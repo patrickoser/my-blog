@@ -37,7 +37,6 @@ Steps:
     5. I could maybe keeping the authorized role features, e.g creating, editing, and deleting posts, and assign a 
     dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
     it.
-
  
     6. 
 
