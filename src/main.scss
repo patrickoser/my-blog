@@ -3,3 +3,9 @@
   $theme-color: "amber",
 );
 
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  nav {
+    --pico-card-box-shadow: var(--pico-box-shadow);
+  }
+}

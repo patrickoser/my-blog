@@ -7,22 +7,24 @@ const Nav = () => {
 
     return (
         <nav className="container-fluid">
-            <ul>
+            <form className="grid" onSubmit={(e) => e.preventDefault()}>
+                <ul>
                 <li>
-                    <form className="grid" onSubmit={(e) => e.preventDefault()}>
-                        <input 
-                            className="searchInput"
-                            type="text" 
-                            name="search"
-                            placeholder="Search Posts"
-                            value={search}
-                            id="search"
-                            onChange={(e) => setSearch(e.target.value)} 
-                        />
-                        <button>Search</button>
-                    </form>
+                    <input 
+                        className="searchInput"
+                        type="text" 
+                        name="search"
+                        placeholder="Search Posts"
+                        value={search}
+                        id="search"
+                        onChange={(e) => setSearch(e.target.value)} 
+                    />
                 </li>
-            </ul>
+                <li>
+                    <button>Search</button>
+                </li>
+                </ul>
+            </form>
             <ul>
                 <li>
                     <Link to="/">Home</Link>
