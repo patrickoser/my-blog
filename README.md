@@ -21,6 +21,8 @@ Attention:
 
 Steps:
 
+    0. Finish implmenting pico.
+
     1. Move the nav bar into a sidebar when the screen is big enough and when the screen
     gets too small move it back below the header. Both of these changes will give the site
     a responsive feeling.
