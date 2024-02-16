@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 // Post takes post as a parameter 
 const Post = ({ post }) => {
     return (
-        <main>
+        <article>
             <Link to={`/post/${post.id}`}>
                 <h2><span>{post.title}</span></h2>
                 <p>{post.datetime}</p>
@@ -13,7 +13,7 @@ const Post = ({ post }) => {
                 ? post.body
                 : `${(post.body).slice(0, 50)}...`
             }</p>
-        </main>
+        </article>
     )
 }
 
