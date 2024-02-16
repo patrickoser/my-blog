@@ -10,6 +10,12 @@
   }
 }
 
+body {
+  min-height: 100vh;
+}
+
 footer {
   text-align: center;
+  position: sticky;
+  top: 100vh;
 }
