@@ -17,10 +17,13 @@ body {
 
 header, nav, footer {
   background-color: white;
+  display: flex;
+}
+
+nav {
+  margin-bottom: 1rem;
 }
 
 footer {
-  text-align: center;
-  position: sticky;
-  top: 100vh;
+  justify-content: center;
 }
