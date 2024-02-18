@@ -6,8 +6,8 @@ const Post = ({ post }) => {
         <article>
             <Link to={`/post/${post.id}`}>
                 <hgroup>
-                    <h2><span className='postTitle'>{post.title}</span></h2>
-                    <h4>{post.datetime}</h4>
+                    <h2  style={{marginBottom: ".25rem"}}>{post.title}</h2>
+                    <h5>{post.datetime}</h5>
                 </hgroup>
             </Link>
             <p>{
