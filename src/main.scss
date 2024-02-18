@@ -3,21 +3,25 @@
   $theme-color: "amber",
 );
 
-[data-theme=light],
+/*[data-theme=light],
 :root:not([data-theme=dark]) {
   nav {
     --pico-card-box-shadow: var(--pico-box-shadow);
   }
-}
+}*/
 
 body {
-  height: 100vh;
   background-color: rgb(235, 235, 235);
 }
 
-header, nav {
+header, nav, footer {
   background-color: white;
   display: flex;
+  align-items: center;
+}
+
+header {
+  padding-bottom: 0;
 }
 
 nav {
@@ -25,7 +29,8 @@ nav {
 }
 
 footer {
-  display: flex;
+  max-height: fit-content;
   justify-content: center;
   align-items: center;
+  padding-top: .25rem;
 }
