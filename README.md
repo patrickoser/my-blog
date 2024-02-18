@@ -20,8 +20,9 @@ Attention:
     Worth looking into so I have an understanding as opposed to just following something I found to work.
 
 Steps:
+    -1. Figure out how to get the footer to stay at the bottom of the page despite how much content there is.
 
-    0. Add button to switch between light and dark theme to the right side of the header.
+    0. Add functionality to light/dark theme button.
 
     1. Add a feature that switches color themes when you click to a different page or reload the page.
 
@@ -34,7 +35,7 @@ Steps:
     4. figure out how to deploy the site and set up proper backend. Probably easiest to use 
     firebase now but look up some tutorials on how different ways to make it work.
 
-    5. I could maybe keeping the authorized role features, e.g creating, editing, and deleting posts, and assign a 
+    5. I could maybe keep the CUD buttons for unauthorized users, e.g creating, editing, and deleting posts, and assign a 
     dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
     it.
  
