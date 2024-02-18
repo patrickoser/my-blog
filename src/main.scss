@@ -11,6 +11,8 @@
 
   // Enable .classes
   $enable-classes: true,
+
+  
 );
 
 /*[data-theme=light],
@@ -19,6 +21,10 @@
     --pico-card-box-shadow: var(--pico-box-shadow);
   }
 }*/
+
+:root {
+  --pico-nav-link-spacing-vertical: 0.3rem;
+}
 
 body {
   background-color: rgb(235, 235, 235);
@@ -30,6 +36,10 @@ header, nav, footer {
 
 header h2 {
   --pico-typography-spacing-vertical: .25em;
+}
+
+header button {
+  max-width: fit-content;
 }
 
 nav {
