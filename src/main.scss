@@ -39,6 +39,8 @@ header h2 {
 }
 
 header button {
+  display: flex;
+  justify-self: flex-end;
   max-width: fit-content;
 }
 
