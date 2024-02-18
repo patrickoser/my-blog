@@ -6,7 +6,7 @@ const Nav = () => {
     const { search, setSearch } = useContext(DataContext)
 
     return (
-        <nav className="container-fluid">
+        <nav>
             <form className="grid" onSubmit={(e) => e.preventDefault()}>
                 <ul>
                 <li>

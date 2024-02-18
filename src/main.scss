@@ -28,12 +28,17 @@ header, nav, footer {
   background-color: white;
 }
 
-header {
-  padding-bottom: 0;
+header h2 {
+  --pico-typography-spacing-vertical: .25rem;
 }
 
 nav {
   margin-bottom: 1rem;
+}
+
+nav li {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 footer {
