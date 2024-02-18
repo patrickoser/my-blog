@@ -12,7 +12,7 @@ const PostPage = () => {
             {
                 <article>
                     <hgroup>
-                        <h1>{post.title}</h1>
+                        <h1 style={{marginBottom: ".25rem"}}>{post.title}</h1>
                         <h2>{post.datetime}</h2>
                     </hgroup>
                     <p>{post.body}</p>
