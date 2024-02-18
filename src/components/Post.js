@@ -5,13 +5,15 @@ const Post = ({ post }) => {
     return (
         <article>
             <Link to={`/post/${post.id}`}>
-                <h2><span>{post.title}</span></h2>
-                <p>{post.datetime}</p>
+                <hgroup>
+                    <h2><span className='postTitle'>{post.title}</span></h2>
+                    <h4>{post.datetime}</h4>
+                </hgroup>
             </Link>
             <p>{
                 (post.body).length <= 25
                 ? post.body
-                : `${(post.body).slice(0, 50)}...`
+                : `${(post.body).slice(0, 100)}...`
             }</p>
         </article>
     )
