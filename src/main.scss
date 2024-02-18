@@ -15,7 +15,7 @@ body {
   background-color: rgb(235, 235, 235);
 }
 
-header, nav, footer {
+header, nav {
   background-color: white;
   display: flex;
 }
@@ -25,6 +25,7 @@ nav {
 }
 
 footer {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
