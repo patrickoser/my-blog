@@ -23,9 +23,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
         <DataProvider>
-          <Nav />
+          <Header />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='about' element={<About />} />
