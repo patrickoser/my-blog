@@ -15,23 +15,34 @@
   
 );
 
-/*[data-theme=light],
-:root:not([data-theme=dark]) {
-  nav {
-    --pico-card-box-shadow: var(--pico-box-shadow);
+[data-theme=dark],
+:root:not([data-theme=light]) {
+  body {
+    background-color: #1d232e;
   }
-}*/
+
+  header, nav, footer {
+    background-color: #13171f;
+  }
+}
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  header, nav, footer {
+    background-color: white;
+  }
+
+  body {
+    background-color: rgb(235, 235, 235);
+  }
+}
 
 :root {
   --pico-nav-link-spacing-vertical: 0.3rem;
 }
 
-body {
-  background-color: rgb(235, 235, 235);
-}
-
-header, nav, footer {
-  background-color: white;
+a {
+  text-decoration: none;
 }
 
 header h2 {
