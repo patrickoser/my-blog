@@ -8,7 +8,6 @@ import About from "./components/About";
 import EditPage from "./components/EditPage";
 import NewPost from "./components/NewPost";
 import Missing from "./components/Missing";
-import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
