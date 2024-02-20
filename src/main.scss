@@ -17,12 +17,9 @@
 
 [data-theme=dark],
 :root:not([data-theme=light]) {
-  body {
-    background-color: #1d232e;
-  }
-
-  header, nav, footer {
-    background-color: #13171f;
+  --pico-background-color: #212735;
+  header, footer {
+    --pico-background-color: #13171f;
   }
 }
 
@@ -32,7 +29,7 @@
     background-color: white;
   }
 
-  body {
+  #root {
     background-color: rgb(235, 235, 235);
   }
 }
