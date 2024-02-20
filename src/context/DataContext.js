@@ -96,12 +96,23 @@ export const DataProvider = ({ children }) => {
 
         setSearchResults(filteredResults.reverse())
     }, [posts, search])
+
+    const toggleTheme = () => {
+        const rootElement = document.getElementById('root')
+        const rootTheme = rootElement.getAttribute('data-theme')
+        if (rootTheme === 'light') {
+            rootElement.setAttribute('data-theme', 'dark')
+        } else {
+            rootElement.setAttribute('data-theme', 'light')
+        }
+      }
     
     return (
         <DataContext.Provider value={{
             posts, setPosts, search, setSearch, searchResults, setSearchResults,
             postTitle, setPostTitle, postBody, setPostBody, createPost, deletePost,
-            updatePost, editTitle, setEditTitle, editBody, setEditBody
+            updatePost, editTitle, setEditTitle, editBody, setEditBody,
+            toggleTheme
         }}>
             {children}
         </DataContext.Provider>
