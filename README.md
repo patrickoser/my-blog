@@ -34,6 +34,8 @@ Steps:
     dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
     it.
 
+    6. Figure how to save the users theme preference in local storage.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
