@@ -11,9 +11,8 @@
   $enable-classes: true,
 );
 
-[data-theme=dark],
-body:not([data-theme=light]) {
-  background-color: rgba(31, 31, 48, 0.979);
+[data-theme=dark] {
+  background-color: rgb(31, 31, 48);
   --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
   --pico-primary: #f56b3d;
   --pico-primary-background: #d24317;
@@ -23,12 +22,11 @@ body:not([data-theme=light]) {
   --pico-primary-focus: rgba(245, 107, 61, 0.375);
   --pico-primary-inverse: #fff;
   header {
-    background-color: rgba(31, 31, 48, 0.979);
+    background-color: rgb(31, 31, 48);
   }
 }
 
-[data-theme=light],
-body:not([data-theme=dark]) {
+[data-theme=light] {
   background-color: whitesmoke;
   --pico-text-selection-color: rgba(244, 93, 44, 0.25);
   --pico-primary: #bd3c13;
