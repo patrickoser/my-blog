@@ -20,11 +20,6 @@ Attention:
     Worth looking into so I have an understanding as opposed to just following something I found to work.
 
 Steps:
-    -1. Figure out how to get the footer to stay at the bottom of the page despite how much content there is.
-
-    0. Add functionality to light/dark theme button.
-
-    1. Add a feature that switches color themes when you click to a different page or reload the page.
 
     2. Since this is going to be a blog just for me to edit/post to, I should add authorized
     roles to the site. That way when I enter the site I will be able to post/edit whatever I
@@ -38,8 +33,6 @@ Steps:
     5. I could maybe keep the CUD buttons for unauthorized users, e.g creating, editing, and deleting posts, and assign a 
     dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
     it.
- 
-    6. 
 
 # Getting Started with Create React App
 
