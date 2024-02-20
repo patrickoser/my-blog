@@ -37,14 +37,21 @@
   }
 }
 
+// Slims down the nav vertically
 :root {
   --pico-nav-link-spacing-vertical: 0.3rem;
 }
 
+// Reamoves text decoration for all links
 a {
   text-decoration: none;
 }
 
+header {
+  margin-top: .25rem;
+}
+
+// Slims down the bottom of the header
 header h2 {
   --pico-typography-spacing-vertical: .25em;
 }

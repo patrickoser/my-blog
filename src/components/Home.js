@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <main id="Home" className="container">
-            <h1>What do we have here...</h1>
+            <h1></h1>
             {posts.length ? <Feed posts={searchResults} /> : <p>No Posts to display</p>}
         </main>
     )
