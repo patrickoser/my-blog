@@ -42,6 +42,12 @@ body:not([data-theme=dark]) {
   --pico-nav-link-spacing-vertical: 0.3rem;
 }
 
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 // Reamoves text decoration for all links
 a {
   text-decoration: none;
@@ -103,4 +109,5 @@ nav li {
 
 footer {
   text-align: center;
+  margin-top: auto;
 }
