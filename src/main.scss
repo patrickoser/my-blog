@@ -22,6 +22,9 @@ body:not([data-theme=light]) {
   --pico-primary-hover-background: #e74b1a;
   --pico-primary-focus: rgba(245, 107, 61, 0.375);
   --pico-primary-inverse: #fff;
+  header {
+    background-color: rgba(31, 31, 48, 0.979);
+  }
 }
 
 [data-theme=light],
@@ -35,6 +38,9 @@ body:not([data-theme=dark]) {
   --pico-primary-hover-background: #bd3c13;
   --pico-primary-focus: rgba(244, 93, 44, 0.5);
   --pico-primary-inverse: #fff;
+  header {
+    background-color: whitesmoke;
+  }
 }
 
 // Slims down the nav vertically
@@ -54,7 +60,10 @@ a {
 }
 
 header {
-  margin-top: .25rem;
+  padding-top: .25rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 // Slims down the bottom of the header
@@ -98,12 +107,13 @@ nav li {
 .Post {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 325px;
+  padding-bottom: .5rem;
 }
 
-.Post .postButtons {
+.postButtons {
   display: flex;
-  align-items: flex-start;
+  margin-top: auto;
   justify-content: flex-end;
 }
 
@@ -131,5 +141,12 @@ footer {
   }
   .emailLabelInput {
     margin-left: 1rem;
+  }
+  .postButtons {
+    margin-top: auto;
+    display: flex;
+  }
+  .Post {
+    padding-bottom: .5rem;
   }
 }
