@@ -16,22 +16,29 @@
 );
 
 [data-theme=dark],
-:root:not([data-theme=light]) {
-  --pico-background-color: #212735;
-  header, footer {
-    --pico-background-color: #13171f;
-  }
+body:not([data-theme=light]) {
+  background-color: rgba(31, 31, 48, 0.979);
+  --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
+  --pico-primary: #f56b3d;
+  --pico-primary-background: #d24317;
+  --pico-primary-underline: rgba(245, 107, 61, 0.5);
+  --pico-primary-hover: #f8a283;
+  --pico-primary-hover-background: #e74b1a;
+  --pico-primary-focus: rgba(245, 107, 61, 0.375);
+  --pico-primary-inverse: #fff;
 }
 
 [data-theme=light],
-:root:not([data-theme=dark]) {
-  header, nav, footer {
-    background-color: white;
-  }
-
-  #root {
-    background-color: rgb(235, 235, 235);
-  }
+body:not([data-theme=dark]) {
+  background-color: white;
+  --pico-text-selection-color: rgba(244, 93, 44, 0.25);
+  --pico-primary: #bd3c13;
+  --pico-primary-background: #d24317;
+  --pico-primary-underline: rgba(189, 60, 19, 0.5);
+  --pico-primary-hover: #942d0d;
+  --pico-primary-hover-background: #bd3c13;
+  --pico-primary-focus: rgba(244, 93, 44, 0.5);
+  --pico-primary-inverse: #fff;
 }
 
 // Slims down the nav vertically
@@ -72,6 +79,22 @@ nav li {
 
 .deleteBtn {
   margin-right: .5rem;
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+}
+
+.Feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+/* Style the cards */
+.Post {
+  height: 300px;
 }
 
 footer {

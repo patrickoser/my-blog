@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 // Post takes post as a parameter 
 const Post = ({ post }) => {
     return (
-        <article>
+        <article className='Post'>
             <Link to={`/post/${post.id}`}>
                 <hgroup>
                     <h2  style={{marginBottom: ".25rem"}}>{post.title}</h2>
