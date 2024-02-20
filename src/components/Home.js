@@ -10,9 +10,17 @@ import DataContext from "../context/DataContext"
 const Home = () => {
    const { posts, searchResults } = useContext(DataContext)
 
+    const titleArray = [
+        "These are my posts not yours!", 
+        "I said what I said!", 
+        "What do we have here..."
+    ];
+    const randomIndex = Math.floor(Math.random() * titleArray.length);
+    const randomTitle = titleArray[randomIndex];
+
     return (
         <main id="Home" className="container">
-            <h1></h1>
+            <h1>{randomTitle}</h1>
             {posts.length ? <Feed posts={searchResults} /> : <p>No Posts to display</p>}
         </main>
     )
