@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom"
 import Nav from "./Nav"
-import { useContext } from "react"
-import DataContext from '../context/DataContext'
 
 const Header = () => {
-    const { toggleTheme } = useContext(DataContext)
+    const toggleTheme = () => {
+        const rootElement = document.getElementById('root')
+        const rootTheme = rootElement.getAttribute('data-theme')
+        if (rootTheme === 'light') {
+            rootElement.setAttribute('data-theme', 'dark')
+        } else {
+            rootElement.setAttribute('data-theme', 'light')
+        }
+      }
 
     return (
         <header className="container-fluid">
