@@ -107,7 +107,29 @@ nav li {
   justify-content: flex-end;
 }
 
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   text-align: center;
   margin-top: auto;
+}
+
+@media (min-width: 1024px) {
+  .contactNameEmailCon {
+    display: flex;
+    flex-direction: row;
+  }
+  .nameLabelInput, .emailLabelInput {
+    flex: 1;
+    justify-content: space-evenly;
+  }
+  .nameLabelInput {
+    margin-right: 1rem;
+  }
+  .emailLabelInput {
+    margin-left: 1rem;
+  }
 }
