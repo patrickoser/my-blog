@@ -94,7 +94,15 @@ nav li {
 
 /* Style the cards */
 .Post {
+  display: flex;
+  flex-direction: column;
   height: 300px;
+}
+
+.Post .postButtons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 footer {
