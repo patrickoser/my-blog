@@ -26,7 +26,7 @@ body:not([data-theme=light]) {
 
 [data-theme=light],
 body:not([data-theme=dark]) {
-  background-color: white;
+  background-color: whitesmoke;
   --pico-text-selection-color: rgba(244, 93, 44, 0.25);
   --pico-primary: #bd3c13;
   --pico-primary-background: #d24317;
