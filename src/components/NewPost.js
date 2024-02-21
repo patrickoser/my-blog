@@ -7,6 +7,7 @@ const NewPost = () => {
     return (
         <div className="container">
             <article>
+                <h2>New Post</h2>
                 <form onSubmit={createPost}>
                     <label htmlFor="postTitle">Title</label>
                     <input 
