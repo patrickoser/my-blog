@@ -85,6 +85,11 @@ nav li {
   padding-top: .5em;
   padding-bottom: .5em;
 }
+.deleteBtn, .editBtn {
+  max-width: fit-content;
+  padding: .25rem;
+  margin-top: .25rem;
+} 
 
 .deleteBtn {
   margin-right: .5rem;
