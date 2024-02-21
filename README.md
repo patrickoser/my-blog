@@ -41,6 +41,8 @@ Steps:
 Future Add-ons:
     1. Add the ability to like posts, share posts and maybe a comment section.
 
+    2. Add page to the blog section so only 25-50 blogs appear at a time. It could load more pages as you scroll don as well instead of manually clicking to a new page.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
