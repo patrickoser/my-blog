@@ -2,9 +2,10 @@ import { Link } from "react-router-dom"
 import Nav from "./Nav"
 
 const Header = () => {
+    const rootElement = document.getElementById('root')
+    const rootTheme = rootElement.getAttribute('data-theme')
+    
     const toggleTheme = () => {
-        const rootElement = document.getElementById('root')
-        const rootTheme = rootElement.getAttribute('data-theme')
         if (rootTheme === 'light') {
             rootElement.setAttribute('data-theme', 'dark')
         } else {
@@ -18,7 +19,7 @@ const Header = () => {
                 <Link to={'/'}>
                     <h2>My Blog</h2>
                 </Link>
-                <button onClick={toggleTheme}>Light or Dark</button>
+                <button onClick={toggleTheme}>{rootTheme === 'light' ? 'Dark' : 'Light'}</button>
             </div>
             <Nav />
         </header>
