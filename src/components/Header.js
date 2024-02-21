@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
+import { FaSun, FaMoon } from "react-icons/fa"
 import Nav from "./Nav"
 
 const Header = () => {
     const rootElement = document.getElementById('root')
     const rootTheme = rootElement.getAttribute('data-theme')
-    
-    const toggleTheme = () => {
+
+    const toggleTheme = (e) => {
+        e.preventDefault()
         if (rootTheme === 'light') {
             rootElement.setAttribute('data-theme', 'dark')
         } else {
@@ -19,7 +21,7 @@ const Header = () => {
                 <Link to={'/'}>
                     <h2>My Blog</h2>
                 </Link>
-                <button onClick={toggleTheme}>{rootTheme === 'light' ? 'Dark' : 'Light'}</button>
+                <button onClick={(e) => toggleTheme(e)}>{rootTheme === 'light' ? <FaMoon /> : <FaSun />}</button>
             </div>
             <Nav />
         </header>
