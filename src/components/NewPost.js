@@ -23,6 +23,8 @@ const NewPost = () => {
                         id="postBody" 
                         value={postBody} 
                         name="postBody" 
+                        cols={30}
+                        rows={10}
                         onChange={(e) => setPostBody(e.target.value)} 
                         required 
                     />
