@@ -9,15 +9,7 @@ come back to it later.
 
 Attention:
 
-    I will use 'BrowserRouter' now because I am spending too much time fumbling around with
-    'createBrowserRouter'. After I finish this with 'BrowserRouter' I will look into what really
-    makes 'BrowserRouter' and 'createBrowserRouter' different and decide if it is worth it to
-    refactor with 'createBrowserRouter'. I have to get over my hesitation to ask questions I may
-    see as dumb and be okay with looking for help when I feel I have exhausted all other
-    resources.
-
-    Still not sure why I can import 'api' from './api/postsAxios.js' and refernce that server. 
-    Worth looking into so I have an understanding as opposed to just following something I found to work.
+    The theme toggle button switches the theme one time but doesn't repsond to anymore clicks after. The icon also doesn't change so need to figure out why those two things are happening.
 
 Steps:
 
