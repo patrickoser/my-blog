@@ -13,9 +13,7 @@ Attention:
 
 Steps:
 
-    2. Since this is going to be a blog just for me to edit/post to, I should add authorized
-    roles to the site. That way when I enter the site I will be able to post/edit whatever I
-    want and other people will only be able to view my posts/whatever I allow.
+    2. Use a CMS like Netlify to manage your content and be sure to remove the create/update/delete functionality from the site so visitors can only read content.
 
     3. Keep commenting on all the different processes to hammer home what everything does.
 
