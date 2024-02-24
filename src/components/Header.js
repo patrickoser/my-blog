@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { FaSun, FaMoon } from "react-icons/fa"
 import Nav from "./Nav"
 
 const Header = () => {
@@ -21,7 +20,7 @@ const Header = () => {
                 <Link to={'/'}>
                     <h2>My Blog</h2>
                 </Link>
-                <button onClick={(e) => toggleTheme(e)}>{rootTheme === 'light' ? <FaMoon /> : <FaSun />}</button>
+                <button onClick={(e) => toggleTheme(e)}></button>
             </div>
             <Nav />
         </header>
