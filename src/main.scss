@@ -64,6 +64,10 @@ header {
   z-index: 100;
 }
 
+.toggleTheme i {
+  cursor: pointer;
+}
+
 // Slims down the bottom of the header
 header h2 {
   --pico-typography-spacing-vertical: .25em;

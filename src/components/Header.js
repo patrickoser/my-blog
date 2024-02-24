@@ -26,7 +26,12 @@ const Header = () => {
                     <h2>My Blog</h2>
                 </Link>
                 <div className="toggleTheme">
-                    <i onClick={toggleTheme} className="fa-solid fa-toggle-on"></i>
+                    {theme === 'dark' &&
+                        <i onClick={toggleTheme} className="fa-solid fa-toggle-off"></i>
+                    }
+                    {theme !== 'dark' &&
+                        <i onClick={toggleTheme} className="fa-solid fa-toggle-on"></i>
+                    }
                 </div>
             </div>
             <Nav />
