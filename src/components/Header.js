@@ -1,22 +1,11 @@
 import { Link } from "react-router-dom"
 import useLocalStorage from 'use-local-storage'
+import DataContext from "../context/DataContext"
+import { useContext } from "react"
 import Nav from "./Nav"
 
 const Header = () => {
-    const rootElement = document.getElementById('root')
-    const rootTheme = rootElement.getAttribute('data-theme')
-
-    const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
-
-    const toggleTheme = () => {
-        if (rootTheme === 'light') {
-            rootElement.setAttribute('data-theme', 'dark')
-            setTheme('dark')
-        } else {
-            rootElement.setAttribute('data-theme', 'light')
-            setTheme('light')
-        }
-      }
+    const { toggleTheme, theme } = useContext(DataContext)
 
     return (
         <header className="container-fluid">
@@ -27,14 +16,14 @@ const Header = () => {
                 <div className="toggleTheme">
                     {theme === 'dark' &&
                         <>
-                            <i id="sun" className="fa-solid fa-sun"></i>
-                            <i onClick={toggleTheme} className="fa-solid fa-toggle-off"></i>
+                            <i id="sun" style={{color: "#e0e3e7"}} className="fa-solid fa-sun fa-lg"></i>
+                            <i onClick={toggleTheme} style={{color: "#e0e3e7"}} className="fa-solid fa-toggle-off fa-xl"></i>
                         </>
                     }
                     {theme !== 'dark' &&
                         <>
-                            <i id="moon" className="fa-solid fa-moon"></i>
-                            <i onClick={toggleTheme} className="fa-solid fa-toggle-on"></i>
+                            <i id="moon" className="fa-solid fa-moon fa-lg" style={{color: "#373c44"}}></i>
+                            <i onClick={toggleTheme} style={{color: "#373c44"}} className="fa-solid fa-toggle-on fa-xl"></i>
                         </>
                     }
                 </div>

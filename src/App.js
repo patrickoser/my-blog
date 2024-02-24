@@ -1,5 +1,6 @@
-
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { useContext } from "react";
+import DataContext from "./context/DataContext";
 
 // import Router from './components/Router';
 import Home from "./components/Home";
@@ -17,10 +18,11 @@ import { DataProvider } from './context/DataContext';
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
+  const { theme } = useContext(DataContext)
 
   // Returns the jsx elements.
   return (
-    <div className="App">
+    <div className="App" id="App" data-theme={theme}>
       <Router>
         <DataProvider>
           <Header />

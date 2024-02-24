@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import useLocalStorage from "use-local-storage";
 import api from '../api/postsAxios'
 import { useNavigate } from "react-router-dom";
 import { format } from 'date-fns'
@@ -96,12 +97,26 @@ export const DataProvider = ({ children }) => {
 
         setSearchResults(filteredResults.reverse())
     }, [posts, search])
+
+    const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
+
+    const toggleTheme = () => {
+
+        if (theme === 'light') {
+            setTheme('dark')
+            console.log(`Local storage theme: ${theme}`)
+        } else {
+            setTheme('light')
+            console.log(`Local storage theme: ${theme}`)
+        }
+      }
     
     return (
         <DataContext.Provider value={{
             posts, setPosts, search, setSearch, searchResults, setSearchResults,
             postTitle, setPostTitle, postBody, setPostBody, createPost, deletePost,
-            updatePost, editTitle, setEditTitle, editBody, setEditBody
+            updatePost, editTitle, setEditTitle, editBody, setEditBody,
+            toggleTheme, theme
         }}>
             {children}
         </DataContext.Provider>

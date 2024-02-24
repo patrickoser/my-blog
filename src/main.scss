@@ -64,11 +64,15 @@ header {
   z-index: 100;
 }
 
-.toggleTheme i {
-  cursor: pointer;
+.toggleTheme {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
+  align-items: center;
+  font-weight: 5rem;
+}
+
+.toggleTheme i {
+  cursor: pointer;
 }
 
 #sun, #moon {
