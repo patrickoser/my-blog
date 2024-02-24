@@ -101,14 +101,8 @@ export const DataProvider = ({ children }) => {
     const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
 
     const toggleTheme = () => {
-
-        if (theme === 'light') {
-            setTheme('dark')
-            console.log(`Local storage theme: ${theme}`)
-        } else {
-            setTheme('light')
-            console.log(`Local storage theme: ${theme}`)
-        }
+        const newTheme = theme === 'light' ? 'dark' : 'light'
+        setTheme(newTheme)
       }
     
     return (

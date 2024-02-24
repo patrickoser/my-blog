@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import useLocalStorage from 'use-local-storage'
 import DataContext from "../context/DataContext"
 import { useContext } from "react"
 import Nav from "./Nav"
