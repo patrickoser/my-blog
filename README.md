@@ -7,8 +7,7 @@ Let's Build! You got this.
 Keep commenting on everything you do so that you can know exactly what something does when you come back to it later. 
 
 Attention:
-
-    The theme toggle button switches the theme one time but doesn't repsond to anymore clicks after. The icon also doesn't change so need to figure out why those two things are happening.
+    I moved all theme functionality into the DataContext. The toggleTheme function works but the css for the page as a whole is not being chnaged. Only the icons chnage as expected."
 
 Steps:
 
