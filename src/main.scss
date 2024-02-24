@@ -66,6 +66,13 @@ header {
 
 .toggleTheme i {
   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+#sun, #moon {
+  padding-right: .25rem;
 }
 
 // Slims down the bottom of the header

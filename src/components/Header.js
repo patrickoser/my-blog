@@ -8,8 +8,7 @@ const Header = () => {
 
     const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
 
-    const toggleTheme = (e) => {
-        e.preventDefault()
+    const toggleTheme = () => {
         if (rootTheme === 'light') {
             rootElement.setAttribute('data-theme', 'dark')
             setTheme('dark')
@@ -27,10 +26,16 @@ const Header = () => {
                 </Link>
                 <div className="toggleTheme">
                     {theme === 'dark' &&
-                        <i onClick={toggleTheme} className="fa-solid fa-toggle-off"></i>
+                        <>
+                            <i id="sun" className="fa-solid fa-sun"></i>
+                            <i onClick={toggleTheme} className="fa-solid fa-toggle-off"></i>
+                        </>
                     }
                     {theme !== 'dark' &&
-                        <i onClick={toggleTheme} className="fa-solid fa-toggle-on"></i>
+                        <>
+                            <i id="moon" className="fa-solid fa-moon"></i>
+                            <i onClick={toggleTheme} className="fa-solid fa-toggle-on"></i>
+                        </>
                     }
                 </div>
             </div>
