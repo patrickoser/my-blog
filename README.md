@@ -7,7 +7,7 @@ Let's Build! You got this.
 Keep commenting on everything you do so that you can know exactly what something does when you come back to it later. 
 
 Attention:
-    I moved all theme functionality into the DataContext. The toggleTheme function works but the css for the page as a whole is not being chnaged. Only the icons chnage as expected."
+    I moved all theme functionality into the DataContext. The toggleTheme function works but the css for the page as a whole is not being chnaged. Only the icons chnage as expected.
 
 Steps:
 

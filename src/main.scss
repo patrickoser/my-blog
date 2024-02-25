@@ -1,17 +1,8 @@
-@use "sass:map";
-@use "@picocss/pico/scss/pico" as * with (
-  // Define the root element used to target <header>, <main>, <footer>
-  // with $enable-semantic-container and $enable-responsive-spacings
-  $semantic-root-element: "#root",
-  
-  // Enable <header>, <main>, <footer> inside $semantic-root-element as containers
-  $enable-semantic-container: true,
-
-  // Enable .classes
-  $enable-classes: true,
+@use "@picocss/pico/scss/pico" with (
+  $theme-color: "amber"
 );
 
-.App [data-theme=dark] {
+.appContainer [data-theme=dark] {
   background-color: rgb(31, 31, 48);
   --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
   --pico-primary: #f56b3d;
@@ -26,7 +17,7 @@
   }
 }
 
-.App [data-theme=light] {
+.appContainer [data-theme=light] {
   background-color: whitesmoke;
   --pico-text-selection-color: rgba(244, 93, 44, 0.25);
   --pico-primary: #bd3c13;

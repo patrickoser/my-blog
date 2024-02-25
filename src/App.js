@@ -2,6 +2,8 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { useContext } from "react";
 import DataContext from "./context/DataContext";
 
+import './main.scss'
+
 // import Router from './components/Router';
 import Home from "./components/Home";
 import PostPage from "./components/PostPage";
@@ -22,21 +24,23 @@ function App() {
 
   // Returns the jsx elements.
   return (
-    <div className="App" id="App" data-theme={theme}>
+    <div className="App">
       <Router>
         <DataProvider>
-          <Header />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='contact' element={<Contact />} />
-            <Route path='post/:id' element={<PostPage />} />
-            <Route path='edit/:id' element={<EditPage />} />
-            <Route path='newpost' element={<NewPost />} />
-            <Route path='*' element={<Missing />} />
-          </Routes>
+          <div className="appContainer" data-theme={theme}>
+            <Header />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='about' element={<About />} />
+              <Route path='contact' element={<Contact />} />
+              <Route path='post/:id' element={<PostPage />} />
+              <Route path='edit/:id' element={<EditPage />} />
+              <Route path='newpost' element={<NewPost />} />
+              <Route path='*' element={<Missing />} />
+            </Routes>
+            <Footer />
+          </div>
         </DataProvider>
-        <Footer />
       </Router>
     </div>
   )
