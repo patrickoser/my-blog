@@ -28,7 +28,7 @@ Steps:
 
     8. I am prop drilling from Home -> Feed -> Post, and should see if using context here would be better.
 
-    9. Look into how to use the useMemo hook within DataContext so that the who Context file isnt run when only a few may be needed."
+    9. Look into how to use the useMemo hook within DataContext so that the who Context file isnt run when only a few may be needed.
 
 Future Add-ons:
     1. Add the ability to like posts, share posts and maybe a comment section.
