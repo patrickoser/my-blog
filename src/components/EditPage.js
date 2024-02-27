@@ -10,6 +10,7 @@ const EditPage = () => {
     return (
         <main className="container">
             <article>
+                <h3>Edit Post</h3>
                 <form onSubmit={(e) => e.preventDefault()}>
                     <label htmlFor="editTitle">Title</label>
                     <input 
@@ -26,6 +27,8 @@ const EditPage = () => {
                         id="editBody" 
                         value={editBody} 
                         name="editBody" 
+                        rows={10}
+                        cols={30}
                         onChange={(e) => setEditBody(e.target.value)} 
                         required 
                     />
