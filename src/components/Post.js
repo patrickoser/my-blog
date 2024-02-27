@@ -11,7 +11,7 @@ const Post = ({ post }) => {
                 </hgroup>
             </Link>
             <p>{
-                (post.body).length <= 25
+                (post.body).length <= 100
                 ? post.body
                 : `${(post.body).slice(0, 100)}...`
             }</p>
