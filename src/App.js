@@ -1,7 +1,6 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 
-
 // import Router from './components/Router';
 import Home from "./components/Home";
 import PostPage from "./components/PostPage";
@@ -27,25 +26,23 @@ function App() {
 
   // Returns the jsx elements.
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <Router>
         <DataProvider>
-          <div className="appContainer" data-theme={theme}>
-            <Header 
-              toggleTheme={toggleTheme}
-              theme={theme}
-            />
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='about' element={<About />} />
-              <Route path='contact' element={<Contact />} />
-              <Route path='post/:id' element={<PostPage />} />
-              <Route path='edit/:id' element={<EditPage />} />
-              <Route path='newpost' element={<NewPost />} />
-              <Route path='*' element={<Missing />} />
-            </Routes>
-            <Footer />
-          </div>
+          <Header 
+            toggleTheme={toggleTheme}
+            theme={theme}
+          />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='post/:id' element={<PostPage />} />
+            <Route path='edit/:id' element={<EditPage />} />
+            <Route path='newpost' element={<NewPost />} />
+            <Route path='*' element={<Missing />} />
+          </Routes>
+          <Footer />
         </DataProvider>
       </Router>
     </div>
