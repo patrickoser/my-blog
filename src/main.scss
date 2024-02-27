@@ -2,16 +2,8 @@
   $theme-color: "amber"
 );
 
-.appContainer[data-theme=dark] {
+[data-theme=dark] {
   background-color: rgb(31, 31, 48);
-  --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
-  --pico-primary: #f56b3d;
-  --pico-primary-background: #d24317;
-  --pico-primary-underline: rgba(245, 107, 61, 0.5);
-  --pico-primary-hover: #f8a283;
-  --pico-primary-hover-background: #e74b1a;
-  --pico-primary-focus: rgba(245, 107, 61, 0.375);
-  --pico-primary-inverse: #fff;
   header {
     background-color: rgb(31, 31, 48);
   }
@@ -19,14 +11,6 @@
 
 [data-theme=light] {
   background-color: whitesmoke;
-  --pico-text-selection-color: rgba(244, 93, 44, 0.25);
-  --pico-primary: #bd3c13;
-  --pico-primary-background: #d24317;
-  --pico-primary-underline: rgba(189, 60, 19, 0.5);
-  --pico-primary-hover: #942d0d;
-  --pico-primary-hover-background: #bd3c13;
-  --pico-primary-focus: rgba(244, 93, 44, 0.5);
-  --pico-primary-inverse: #fff;
   header {
     background-color: whitesmoke;
   }
@@ -41,6 +25,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  transition: all 2s;
 }
 
 // Reamoves text decoration for all links
