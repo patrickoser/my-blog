@@ -17,7 +17,7 @@ const PostPage = () => {
                     </hgroup>
                     <p>{post.body}</p>
                     <button onClick={() => deletePost(post.id)} className="deleteBtn">Delete</button>
-                    <Link to={`/edit/${post.id}`}><button>Edit</button></Link>
+                    <Link to={`/edit/${post.id}`}><button className="editBtn">Edit</button></Link>
                 </article>
             }
         </main>
