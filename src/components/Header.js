@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import DataContext from "../context/DataContext"
-import { useContext } from "react"
 import Nav from "./Nav"
 
 const Header = ({theme, toggleTheme}) => {

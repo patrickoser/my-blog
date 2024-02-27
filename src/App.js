@@ -1,6 +1,4 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import { useContext } from "react";
-import DataContext from "./context/DataContext";
 import useLocalStorage from "use-local-storage";
 
 
