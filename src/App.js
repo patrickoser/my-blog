@@ -1,8 +1,8 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { useContext } from "react";
 import DataContext from "./context/DataContext";
+import useLocalStorage from "use-local-storage";
 
-import './main.scss'
 
 // import Router from './components/Router';
 import Home from "./components/Home";
@@ -20,7 +20,12 @@ import { DataProvider } from './context/DataContext';
 
 // App() returns router which contains all of the layout/routes for the site
 function App() {
-  const { theme } = useContext(DataContext)
+  const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+}
 
   // Returns the jsx elements.
   return (
@@ -28,7 +33,10 @@ function App() {
       <Router>
         <DataProvider>
           <div className="appContainer" data-theme={theme}>
-            <Header />
+            <Header 
+              toggleTheme={toggleTheme}
+              theme={theme}
+            />
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='about' element={<About />} />

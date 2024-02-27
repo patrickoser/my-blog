@@ -3,8 +3,7 @@ import DataContext from "../context/DataContext"
 import { useContext } from "react"
 import Nav from "./Nav"
 
-const Header = () => {
-    const { toggleTheme, theme } = useContext(DataContext)
+const Header = ({theme, toggleTheme}) => {
 
     return (
         <header className="container-fluid">
@@ -17,12 +16,14 @@ const Header = () => {
                         <>
                             <i id="sun" style={{color: "#e0e3e7"}} className="fa-solid fa-sun fa-lg"></i>
                             <i onClick={toggleTheme} style={{color: "#e0e3e7"}} className="fa-solid fa-toggle-off fa-xl"></i>
+                            {console.log(`Dark theme: ${theme}`)}
                         </>
                     }
                     {theme !== 'dark' &&
                         <>
                             <i id="moon" className="fa-solid fa-moon fa-lg" style={{color: "#373c44"}}></i>
                             <i onClick={toggleTheme} style={{color: "#373c44"}} className="fa-solid fa-toggle-on fa-xl"></i>
+                            {console.log(`Light theme: ${theme}`)}
                         </>
                     }
                 </div>
