@@ -10,7 +10,6 @@ Attention:
     When you create a new post the id has a 1 concatenated to the end and not adding 1 to the existing value because the json file stores the id as a string. I need to look up how to get the json to increment the last used id by one and not endlessly concatenate 1 as if its a string.
 
 Steps:
-
     2. Use a CMS like Netlify to manage your content and be sure to remove the create/update/delete functionality from the site so visitors can only read content.
 
     3. Keep commenting on all the different processes to hammer home what everything does.
