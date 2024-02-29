@@ -15,10 +15,6 @@ const Post = ({ post }) => {
                 ? post.body
                 : `${(post.body).slice(0, 100)}...`
             }</p>
-            <section className='postButtons'>
-                <button className='deleteBtn'>Delete</button>
-                <button className='editBtn'>Edit</button>
-            </section>
         </article>
     )
 }
