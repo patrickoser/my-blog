@@ -14,15 +14,6 @@ Steps:
 
     3. Keep commenting on all the different processes to hammer home what everything does.
 
-    4. figure out how to deploy the site and set up proper backend. Probably easiest to use 
-    firebase now but look up some tutorials on how different ways to make it work.
-
-    5. I could maybe keep the CUD buttons for unauthorized users, e.g creating, editing, and deleting posts, and assign a 
-    dialog box to appear and chastize them if someone tries to click them who isn't authorized. Could have fun with 
-    it.
-
-    6. Figure how to save the users theme preference in local storage.
-
     7. Add drop shadow to header when scrolling.
 
     8. I am prop drilling from Home -> Feed -> Post, and should see if using context here would be better.
