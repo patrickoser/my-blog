@@ -7,6 +7,8 @@ Let's Build! You got this.
 Keep commenting on everything you do so that you can know exactly what something does when you come back to it later. 
 
 Attention:
+    Figure out why the posts are not showing.
+
     When you create a new post the id has a 1 concatenated to the end and not adding 1 to the existing value because the json file stores the id as a string. I need to look up how to get the json to increment the last used id by one and not endlessly concatenate 1 as if its a string.
 
 Steps:
